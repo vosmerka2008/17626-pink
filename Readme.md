@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Думлер](https://up.htmlacademy.ru/adaptive/12/user/17626).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига](https://github.com/Pots1988).
 
 ---
 
