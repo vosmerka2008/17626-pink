@@ -5,8 +5,137 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-heder">
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--logo">
+            <button class="site-list__cross" type="button">Закрыть меню
+            </button>
+          </li>
+          <li class="site-list__item">
+            <a href="">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">HTML Academy</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list bottom-list">
+          <li class="bottom-list__item">
+            <button class="bottom-list__burger" type="button">Открыть меню
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="promo">
+        <h2 class="visually-hidden">Реклама приложения</h2>
+        <div class="promo__photo-background">
+          <img class="promo__photo-background-image" src="" width="" height="" alt="">
+        </div>
+        <div class="promo__photo-hand">
+          <img class="promo__photo-hand-image" src="" width="" height="" alt="">
+        </div>
+        <div class="promo__photo-iphone">
+          <img class="promo__photo-iphone-image" src="" width="" height="" alt="">
+        </div>
+      </section>
+      <section class="attachment">
+        <a class="attachment__download button" href="#">Скачать приложение
+        </a>
+        <p class="attachment__for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="advertising">
+        <p class="advertising__question">Устали от серости мегаполиса?</p>
+        <p class="advertising__answer">Нам есть, что вам предложить!</p>
+      </section>
+      <section class="features">
+        <h2 class="features__list">Поднимает настроение</h2>
+        <p class="features__essence">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <h2 class="features__list">Меняет мир вокруг</h2>
+        <p class="features__essence">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <h2 class="features__list">Заводит новых друзей</h2>
+        <p class="features__essence">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="features__example">
+          <img class="features__example-image" src="" width="" height="" alt="Возможности приложения">
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="viusally-hidden">Отзывы</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познкомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__wrapper slider">
+          <h2 class="visually-hidden">Цены</h2>
+          <table class="price__list slider__list">
+            <tr class="price__names">
+              <td class="price__name"></td>
+              <td class="price__name price__name--hit">Стандарт 3,99 USD</td>
+              <td class="price__name"></td>
+            </tr>
+            <tr class="price__type">
+              <td class="price__filter"></td>
+              <td class="price__filter">Розовый фильтр</td>
+              <td class="price__filter"></td>
+            </tr>
+            <tr class="price__type">
+               <td class="price__smiley price__smiley--no"></td>
+               <td class="price__smiley price__smiley--yes">Смайлики</td>
+              <td class="price__smiley"></td>
+            </tr>
+            <tr class="price__type">
+              <td class="price__comments price__comments--no"></td>
+              <td class="price__comments price__comments--no">Комментарии</td>
+            </tr>
+          </table>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!
+        </p>
+        <p class="contacts__item">Звоните:
+        </p>
+        <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66
+        </a>
+        <p class="contacts__item">Пишите:
+        </p>
+        <a class="contacts__text" href="mail@htmlacademy.ru">mail@htmlacademy.ru
+        </a>
+        <p class="contacts__item">Приезжайте в гости:
+        </p>
+        <p class="contacts__text">ул. Большая Конюшенная, 19/8
+        </p>
+      </div>
+    </footer>
+    <div class="map">
+      <h2 class="visually-hidden">Адрес на карте</h2>
+      <p class="map__address">
+      <img class="map__image" src="" width="" height="" alt="Адрес на карте">
+    </div>
   </body>
 </html>
