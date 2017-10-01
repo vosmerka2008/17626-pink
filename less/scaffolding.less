@@ -1,0 +1,65 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  width: 320px;
+  font-size: 14px;
+  line-height: 24px;
+  color: @base-color;
+
+  background-color: #ffffff;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  background-color: transparent;
+  width: 280px;
+  padding: 16px 16px;
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+input::-webkit-input-placeholder {
+  color: @base-color;
+}
+
+input::-moz-placeholder {
+  color: @base-color;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: @base-color;
+}

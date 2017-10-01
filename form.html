@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-heder">
@@ -26,8 +27,8 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="promo">
-        <p class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</p>
+      <section class="promo-photo">
+        <p class="promo-photo__title">Конкурс на самое безбашенное путешествие с Пинк</p>
       </section>
       <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
       <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
@@ -78,9 +79,9 @@
             <input class="personal__input" id="mail" type="email" name="email" placeholder="Введите почту *">
           </p>
         </fieldset>
-        <fieldset class="attachment-type">
-          <legend class="attachment-type__description">С каким приложением путешествовали?</legend>
-          <ul class="attachment-type__list browser">
+        <fieldset class="attachment">
+          <legend class="attachment__description">С каким приложением путешествовали?</legend>
+          <ul class="attachment__list browser">
             <li class="browser__item">
               <label class="browser__label"><input class="browser__input" type="radio" name="type" value="iOS" checked>Pink для iOS</label>
             </li>
@@ -98,7 +99,7 @@
         </fieldset>
         <button class="competition-form__button" type="submit">Отправить форму
         </button>
-        <p class="competition-form__bottom"><sup class="page-main__bottom page-main__bottom--color">*</sup> - обязательные поля</p>
+        <p class="competition-form__bottom"><sup class="page-main__bottom page-main__bottom--color">*</sup> &mdash; обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
@@ -118,9 +119,9 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-text">Разработано
+        <a class="page-footer__copyright-button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
       </div>
     </footer>
     <section class="modal modal-error">

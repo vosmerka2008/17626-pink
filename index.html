@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-heder">
+    <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__button" type="button">Закрыть меню
         </button>
@@ -14,10 +15,10 @@
             <a href="">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="">Фотографии</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="">Конкурс</a>
+            <a href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
             <a href="">HTML Academy</a>
@@ -28,6 +29,7 @@
     <main class="page-main">
       <section class="promo">
         <h2 class="visually-hidden">Реклама приложения</h2>
+        <div class="promo__attachment">
         <a class="promo__attachment-download button" href="https://www.apple.com/ru/itunes/download/">Скачать приложение
         </a>
         <ul class="promo__attachment-list attachment">
@@ -42,6 +44,7 @@
           </li>
         </ul>
         <p class="promo__attachment-for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
       <section class="advertising">
         <p class="advertising__text">Устали от серости мегаполиса?</p>
@@ -57,20 +60,20 @@
           <p class="features__essence">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </div>
         <div class="features__list">
-          <h2 class="features__list">Заводит новых друзей</h2>
+          <h2 class="features__title">Заводит новых друзей</h2>
           <p class="features__essence">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
         <div class="features__example">
-          <img class="features__example-image" src="" width="" height="" alt="Возможности приложения">
+          <img class="features__example-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Возможности приложения">
         </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
-          <h2 class="viusally-hidden">Отзывы</h2>
+          <h2 class="visually-hidden">Отзывы</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познкомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+              <p class="reviews__text"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
             </blockquote>
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name"></cite>
@@ -94,7 +97,7 @@
           <table class="price__list slider__list">
             <tr class="price__names">
               <td class="price__name"></td>
-              <td class="price__name price__name--hit">Стандарт<span class="price__usd">3,99 USD</span></td>
+              <td class="price__name price__name--hit">Стандарт<br><span class="price__usd">3,99 USD</span></td>
               <td class="price__name"></td>
             </tr>
             <tr class="price__type">
@@ -145,10 +148,11 @@
         </div>
       </div>
     </footer>
-    <div class="map">
+    <section class="map">
       <h2 class="visually-hidden">Адрес на карте</h2>
       <p class="map__address">
-      <img class="map__image" src="" width="" height="" alt="Адрес на карте">
-    </div>
+      <img class="map__image" src="img/map.png" width="320" height="" alt="Адрес на карте">
+      </p>
+    </section>
   </body>
 </html>
