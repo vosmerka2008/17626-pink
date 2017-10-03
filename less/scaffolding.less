@@ -1,0 +1,84 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: lighter;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: @base-color;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: @base-color;
+}
+
+input::-moz-placeholder {
+  color: @base-color;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: @base-color;
+}
+
+blockquote {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
