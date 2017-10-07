@@ -1,5 +1,51 @@
+.advertising {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
 .advertising__text {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+  margin-bottom: 37px;
 }
+
+@media (min-width: @tablet-width) {
+  .advertising {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 62px;
+  }
+
+  .advertising__text {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .advertising__text:nth-child(2) {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advertising {
+    width: 940px;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+
+  .advertising__text {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+
+  .advertising__text:nth-child(2) {
+    padding: 0 120px;
+  }
+}
+

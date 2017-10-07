@@ -1,7 +1,28 @@
 .page-footer {
   text-align: center;
+  width: 320px;
+  margin: 0 auto;
 }
 
-.page-footer__copyright-text {
-  line-height: 18px;
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: auto;
+  }
+
+  .page-footer__contacts {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: auto;
+  }
+
+  .page-footer__contacts {
+    width: 940px;
+    margin: 0 auto;
+  }
 }

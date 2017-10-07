@@ -1,14 +1,20 @@
 .promo {
   background-color: #1d2631;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom 271px left 0, top 0 center;
+  background-position: bottom 279px left 0, top 0 center;
   background-repeat: no-repeat;
   min-height: 733px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .promo__attachment {
-  padding: 508px 44px 33px;
+  padding: 508px 20px 33px;
   text-align: center;
+}
+
+.promo__attachment-title {
+  font-size: 0;
 }
 
 .promo__attachment-download {
@@ -17,7 +23,7 @@
   line-height: 18px;
   font-weight: bold;
   background-color: transparent;
-  padding: 16px 16px;
+  padding: 16px 35px;
   border-radius: 50px;
   text-align: center;
   vertical-align: middle;
@@ -33,4 +39,80 @@
   font-size: 24px;
   line-height: 18px;
   color: #ffffff;
+}
+
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-size: auto 545px, auto 730px;
+    background-position: bottom 0 right 20px, top -110px center;
+    width: auto;
+    min-height: 620px;
+  }
+
+  .promo__attachment {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .promo__attachment-download {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+  .promo__attachment-for {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 313px 0 0;
+  }
+
+  .promo__attachment-title {
+    font-size: 40px;
+    line-height: 48px;
+    color: #ffffff;
+    padding: 0 350px 0 45px;
+    margin-bottom: 28px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .promo {
+    background-size: auto 645px, auto 853px;
+    background-position: bottom 0 left 473px, top -110px center;
+    width: auto;
+    min-height: 853px;
+  }
+
+    .promo__attachment {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+    .promo__attachment-title {
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    padding: 0 660px 0 20px;
+    margin-bottom: px;
+  }
+
+   .promo__attachment-download {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+   .promo__attachment-for {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 665px 0 0;
+  }
 }

@@ -1,10 +1,27 @@
 .site-list__item {
   text-align: center;
+  padding: 16px 0;
 
   a {
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    padding: 22px 0;
+    width: 700px;
+  }
+
+  .site-list__item {
+    text-align: center;
+
+    a {
+      line-height: 18px;
+      text-transform: none;
+    }
   }
 }
