@@ -9,6 +9,9 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="#" width="" height="" alt="Логотип Pink">
+          </a>
           <button class="main-nav__button" type="button">Закрыть меню
           </button>
           <ul class="main-nav__list site-list">
@@ -30,28 +33,32 @@
     </header>
     <main class="page-main">
       <section class="promo">
-        <h2 class="visually-hidden">Реклама приложения</h2>
-        <div class="promo__attachment">
-          <p class="promo__attachment-title">Взгляните на жизнь иначе!</p>
-          <a class="promo__attachment-download button" href="https://www.apple.com/ru/itunes/download/">Скачать приложение
-          </a>
-          <ul class="promo__attachment-list attachment">
-            <li class="attachment__item">
-              <a class="attachment__link attachment__link--iPhone" href="http://mobi-set.net/play-market-dlya-iphone/">iPhone</a>
-            </li>
-            <li class="attachment__item">
-              <a class="attachment__link attachment__link--android" href="http://programmy-dlya-android.ru/internet/237-google-play-market.html">Android</a>
-            </li>
-            <li class="attachment__item">
-              <a class="attachment__link attachment__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Windows</a>
-            </li>
-          </ul>
-          <p class="promo__attachment-for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="promo__wrapper">
+          <h2 class="visually-hidden">Реклама приложения</h2>
+          <div class="promo__attachment">
+            <p class="promo__attachment-title">Взгляните на жизнь иначе!</p>
+            <a class="promo__attachment-download button" href="https://www.apple.com/ru/itunes/download/">Скачать приложение
+            </a>
+            <ul class="promo__attachment-list attachment">
+              <li class="attachment__item">
+                <a class="attachment__link attachment__link--iPhone" href="http://mobi-set.net/play-market-dlya-iphone/">iPhone</a>
+              </li>
+              <li class="attachment__item">
+                <a class="attachment__link attachment__link--android" href="http://programmy-dlya-android.ru/internet/237-google-play-market.html">Android</a>
+              </li>
+              <li class="attachment__item">
+                <a class="attachment__link attachment__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Windows</a>
+              </li>
+            </ul>
+            <p class="promo__attachment-for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
       <section class="advertising">
-        <p class="advertising__text">Устали от серости мегаполиса?</p>
-        <p class="advertising__text">Нам есть, что вам предложить!</p>
+        <div class="advertising__wrapper">
+          <p class="advertising__text">Устали от серости мегаполиса?</p>
+          <p class="advertising__text">Нам есть, что вам предложить!</p>
+        </div>
       </section>
       <section class="features">
         <div class="features__wrapper">
@@ -71,15 +78,19 @@
           </div>
           <div class="features__example">
             <img class="features__example-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Возможности приложения">
+            <img class="features__example-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Возможности приложения">
+            <img class="features__example-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Возможности приложения">
           </div>
         </div>
       </section>
       <section class="effects">
         <div class="effects__wrapper">
-          <p class="effects__title">Эффект<br>на 24 часа!</p>
-          <p class="effects__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-          </p>
-          <a class="effects__about" href="#">Узнать больше об исследовании</a>
+          <div class="effects__content">
+            <p class="effects__title">Эффект<br>на 24 часа!</p>
+            <p class="effects__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="effects__about" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -104,6 +115,12 @@
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
+          </p>
+          <p class="reviews__button">
+            <button class="reviews__button-forth" type="button">Вперед
+            </button>
+            <button class="reviews__button-back" type="button">Назад
+            </button>
           </p>
         </div>
       </section>
@@ -143,45 +160,45 @@
           </p>
         </div>
       </section>
+      <section class="info">
+        <div class="info__contacts contacts">
+          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!
+          </p>
+          <div class="contacts__list-wrapper">
+            <div class="contacts__list">
+              <p class="contacts__item">Звоните:
+              </p>
+              <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66
+              </a>
+            </div>
+            <div class="contacts__list">
+              <p class="contacts__item">Пишите:
+              </p>
+              <a class="contacts__text" href="mail@htmlacademy.ru">mail@htmlacademy.ru
+              </a>
+            </div>
+            <div class="contacts__list">
+              <p class="contacts__item">Приезжайте в гости:
+              </p>
+              <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Адрес на карте</h2>
+        <p class="map__address">
+        <img class="map__image" src="img/map.png" width="320" height="" alt="Адрес на карте">
+        </p>
+      </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!
-        </p>
-        <div class="contacts__list-wrapper">
-          <div class="contacts__list">
-            <p class="contacts__item">Звоните:
-            </p>
-            <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66
-            </a>
-          </div>
-          <div class="contacts__list">
-            <p class="contacts__item">Пишите:
-            </p>
-            <a class="contacts__text" href="mail@htmlacademy.ru">mail@htmlacademy.ru
-            </a>
-          </div>
-          <div class="contacts__list">
-            <p class="contacts__item">Приезжайте в гости:
-            </p>
-            <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8
-            </p>
-          </div>
-      </div>
-      </div>
-    </footer>
-    <section class="map">
-      <h2 class="visually-hidden">Адрес на карте</h2>
-      <p class="map__address">
-      <img class="map__image" src="img/map.png" width="320" height="" alt="Адрес на карте">
-      </p>
-    </section>
-    <footer class="page-footer-bottom">
-      <div class="page-footer-bottom__wrapper">
-        <a class="page-footer-bottom__logo">
-          <img class="page-footer-bottom__logo-image" src="index.html" width="" height="" alt="Pink">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="index.html" width="" height="" alt="Pink">
         </a>
-        <div class="page-footer-bottom__social social">
+        <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">Твиттер</a>
@@ -194,9 +211,9 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer-bottom__copyright">
-          <p class="page-footer-bottom__copyright-text">Разработано
-          <a class="page-footer-bottom__copyright-button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
+        <div class="page-footer__copyright">
+          <p class="page-footer__copyright-text">Разработано
+          <a class="page-footer__copyright-button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
         </div>
       </div>
     </footer>

@@ -18,11 +18,14 @@
 
 @media (min-width: @tablet-width) {
   .effects {
-    width: 620px;
-    margin: 0 auto;
+    width: auto
   }
 
   .effects__wrapper {
+    .wrap();
+  }
+
+  .effects__content {
     padding: 50px 24px 50px 310px;
   }
 
@@ -37,11 +40,14 @@
 
 @media (min-width: @desktop-width) {
   .effects {
-    width: 940px;
     background-color: #f2f2f2;
   }
 
   .effects__wrapper {
+    .wrap();
+  }
+
+  .effects__content {
     padding: 110px 0 120px 360px;
   }
 

@@ -1,4 +1,43 @@
+.details {
+  padding: 0 20px;
+}
+
 .details__label {
   font-size: 18px;
   line-height: 30px;
+
+}
+
+.details__item {
+  margin-bottom: 65px;
+}
+
+.details__input {
+  margin-right: 32px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .details {
+    padding: 50px 55px 0;
+  }
+
+  .details__item {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .details {
+    box-sizing: border-box;
+    width: 940px;
+    padding: 50px 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .details__item {
+    margin-bottom: 50px;
+  }
 }

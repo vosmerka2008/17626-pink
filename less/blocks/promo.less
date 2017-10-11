@@ -41,7 +41,6 @@
   color: #ffffff;
 }
 
-
 @media (min-width: @tablet-width) {
   .promo {
     background-size: auto 545px, auto 730px;
@@ -50,13 +49,16 @@
     min-height: 620px;
   }
 
+  .promo__wrapper {
+    .wrap();
+  }
+
   .promo__attachment {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 620px;
-    margin: 0 auto;
     padding: 0;
+    width: 310px;
   }
 
   .promo__attachment-download {
@@ -67,18 +69,16 @@
   .promo__attachment-for {
     font-size: 18px;
     line-height: 24px;
-    padding: 0 313px 0 0;
   }
 
   .promo__attachment-title {
     font-size: 40px;
     line-height: 48px;
     color: #ffffff;
-    padding: 0 350px 0 45px;
+    padding: 0 27px;
     margin-bottom: 28px;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .promo {
@@ -89,19 +89,18 @@
   }
 
   .promo__attachment {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 940px;
-    margin: 0 auto;
     padding: 0;
+    width: 310px;
+  }
+
+  .promo__wrapper {
+    .wrap();
   }
 
   .promo__attachment-title {
     font-size: 50px;
     line-height: 60px;
     color: #ffffff;
-    padding: 0 660px 0 20px;
     margin-bottom: px;
   }
 
@@ -113,6 +112,5 @@
   .promo__attachment-for {
     font-size: 18px;
     line-height: 24px;
-    padding: 0 665px 0 0;
   }
 }

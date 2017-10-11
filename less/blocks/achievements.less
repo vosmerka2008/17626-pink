@@ -1,6 +1,7 @@
 .achievements {
   background-color: #f2f2f2;
   text-align: left;
+  padding: 0;
 }
 
 .achievements__description {
@@ -8,4 +9,22 @@
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .achievements {
+    width: 620px;
+    order: 4;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    margin-bottom: 60px;
+  }
+
+  .achievements__description {
+    background-color: #ffffff;
+    line-height: 30px;
+    padding: 0 40px;
+  }
 }
