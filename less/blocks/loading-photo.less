@@ -1,6 +1,17 @@
 .loading-photo {
   background-color: #f2f2f2;
   text-align: center;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.loading-photo__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .loading-photo__post {
@@ -9,7 +20,8 @@
   line-height: 18px;
   font-weight: bold;
   background-color: transparent;
-  padding: 16px 90px;
+  padding: 16px 81px;
+  margin-bottom: 12px;
   border-radius: 50px;
   text-align: center;
   vertical-align: middle;
@@ -23,11 +35,117 @@
   line-height: 18px;
   font-weight: bold;
   background-color: transparent;
-  padding: 16px 104px;
+  padding: 16px 94px;
   border-radius: 50px;
   text-align: center;
   vertical-align: middle;
   border: 3px solid @base-color;
   color: @base-color;
   opacity: 0.1;
+}
+
+@media (max-width: 660px) {
+  .loading-photo__range--fill,
+  .loading-photo__range--bright {
+    .visually-hidden;
+  }
+}
+
+.loading-photo__range {
+  margin-bottom: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .loading-photo {
+    width: auto;
+    padding: 0;
+  }
+
+  .loading-photo__wrapper {
+    .wrap();
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 20px 55px 0;
+    box-sizing: border-box;
+  }
+
+  .loading-photo__image {
+    width: 300px;
+  }
+
+  .loading-photo__settings {
+    width: 263px;
+  }
+
+  .loading-photo__settings-range {
+    display: flex;
+  }
+
+  .loading-photo__range {
+    margin-bottom: 50px;
+  }
+
+  .loading-photo__range:last-child {
+    margin-bottom: 100px;
+  }
+
+  .loading-photo__post {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .loading-photo {
+    width: 940px;
+    padding: 0;
+  }
+
+  .loading-photo__wrapper {
+    .wrap();
+    display: flex;
+    justify-content: space-between;
+    padding: 57px 60px 57px 80px;
+    box-sizing: border-box;
+  }
+
+  .loading-photo__settings {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loading-photo__settings-range {
+    padding-right: 30px;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .loading-photo__settings-type {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loading-photo__settings {
+    width: 410px;
+  }
+
+  .loading-photo__ranges {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loading-photo__button{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .loading-photo__post {
+    padding: 16px 42px;
+    margin-bottom: 0;
+  }
+
+  .loading-photo__annulment {
+    padding: 16px 55px;
+  }
 }

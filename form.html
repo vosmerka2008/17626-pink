@@ -53,7 +53,7 @@
             </p>
             <p class="personal__item">
                 <label class="personal__label" for="user-name">Имя:</label>
-                <input class="personal__input personal__input--name" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
+                <input class="personal__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
             </p>
             <p class="personal__item">
                 <label class="personal__label" for="user-patronymic">Отчество:</label>
@@ -63,30 +63,36 @@
           <fieldset class="achievements">
             <legend class="achievements__description">Ваши безбашенные достижения в путешествии</legend>
             <ul class="achievements__list details">
-              <div class="details__wrapper">
-                <li class="details__item">
-                  <label class="details__label"><input class="details__input" type="checkbox" name="sulfis" checked>Сделал селфи с акулой</label>
-                </li>
-                <li class="details__item">
-                  <label class="details__label"><input class="details__input" type="checkbox" name="sulfis" checked>Обгорел на пляже</label>
-                </li>
-              </div>
-              <div class="details__wrapper">
-                <li class="details__item">
-                  <label class="details__label"><input class="details__input" type="checkbox" name="norris">Видел Чака Норриса</label>
-                </li>
-                <li class="details__item">
-                  <label class="details__label"><input class="details__input" type="checkbox" name="souvenirs">Накупил сувениров</label>
-                </li>
-              </div>
-              <div class="details__wrapper">
-                <li class="details__item">
-                  <label class="details__label"><input class="details__input" type="checkbox" name="tower" checked>Удержал башню</label>
-                </li>
-                <li class="details__item">
-                  <label class="details__label"><input class="details__input" type="checkbox" name="hotel">Разгромил отель</label>
-                </li>
-              </div>
+              <li class="details__wrapper">
+                <ul>
+                  <li class="details__item">
+                    <label class="details__label"><input class="details__input" type="checkbox" name="sulfis" checked>Сделал селфи с акулой</label>
+                  </li>
+                  <li class="details__item">
+                    <label class="details__label"><input class="details__input" type="checkbox" name="sulfis" checked>Обгорел на пляже</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="details__wrapper">
+                <ul>
+                  <li class="details__item">
+                    <label class="details__label"><input class="details__input" type="checkbox" name="norris">Видел Чака Норриса</label>
+                  </li>
+                  <li class="details__item">
+                    <label class="details__label"><input class="details__input" type="checkbox" name="souvenirs">Накупил сувениров</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="details__wrapper">
+                <ul>
+                  <li class="details__item">
+                    <label class="details__label"><input class="details__input" type="checkbox" name="tower" checked>Удержал башню</label>
+                  </li>
+                  <li class="details__item">
+                    <label class="details__label"><input class="details__input" type="checkbox" name="hotel">Разгромил отель</label>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </fieldset>
           <fieldset class="personal-contacts">
