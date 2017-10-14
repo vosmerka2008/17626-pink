@@ -1,5 +1,7 @@
 .attachments {
   background-color: #f2f2f2;
+  padding: 0;
+  border: none;
 }
 
 .attachments__description {
@@ -7,4 +9,33 @@
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .attachments {
+    order: 2;
+    width: 620px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    margin-bottom: 60px;
+  }
+
+  .attachments__description {
+    background-color: #ffffff;
+    line-height: 30px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attachments {
+    width: 431px;
+    margin-top: -20px;
+  }
+
+  .attachments__description {
+    padding: 0 23px;
+  }
 }

@@ -1,0 +1,26 @@
+.info {
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .info {
+    width: auto;
+  }
+
+  .info__contacts {
+    .wrap();
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info {
+    width: auto;
+  }
+
+  .info__contacts {
+    .wrap();
+  }
+}

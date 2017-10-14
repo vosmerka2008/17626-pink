@@ -1,3 +1,7 @@
+.browser {
+  padding: 0 20px 65px;
+}
+
 .browser__label {
   font-size: 18px;
   line-height: 30px;
@@ -5,4 +9,19 @@
 
 .browser__item {
   text-align: left;
+  margin-bottom: 65px;
+}
+
+.browser__item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .browser {
+    padding: 50px 55px;
+  }
+
+  .browser__item {
+    margin-bottom: 50px;
+  }
 }

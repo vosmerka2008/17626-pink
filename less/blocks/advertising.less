@@ -1,5 +1,56 @@
+.advertising {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
 .advertising__text {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+  margin-bottom: 37px;
+}
+
+@media (min-width: @tablet-width) {
+  .advertising {
+    width: auto;
+    padding: 60px 0 20px;
+  }
+
+  .advertising__wrapper {
+    .wrap();
+  }
+
+  .advertising__text {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .advertising__text:nth-child(2) {
+    padding: 0 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advertising {
+    padding: 60px 0 20px;
+  }
+
+  .advertising__wrapper {
+    .wrap();
+  }
+
+  .advertising__text {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+
+  .advertising__text:nth-child(2) {
+    padding: 0 120px;
+  }
 }

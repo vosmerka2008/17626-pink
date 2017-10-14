@@ -1,8 +1,79 @@
 .modal-dispatch {
+  width: 320px;
+  margin: 0 auto;
   text-align: center;
+  padding-top: 45px;
+}
+
+.modal-dispatch__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 30px;
 }
 
 .modal-dispatch__button {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2aab6d;
+  width: 280px;
+  margin: 0 auto;
+  border: 0;
+  padding: 15px;
+}
+
+.modal-dispatch__text {
+  margin-bottom: 36px;
+  padding: 0 28px;
+}
+
+.modal-dispatch__button-fone {
   background-color: #f2f2f2;
   padding: 52px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-dispatch {
+    width: 460px;
+  }
+
+  .modal-dispatch__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding: 0 100px;
+  }
+
+  .modal-dispatch__text {
+    margin-bottom: 30px;
+    padding: 0 100px;
+  }
+
+  .modal-dispatch__button {
+    width: 295px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-dispatch {
+    width: 780px;
+  }
+
+  .modal-dispatch__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 27px;
+    padding: 0 195px;
+  }
+
+  .modal-dispatch__text {
+    margin-bottom: 38px;
+    padding: 0 225px;
+  }
+
+  .modal-dispatch__button {
+    width: 456px;
+  }
 }

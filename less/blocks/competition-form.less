@@ -1,5 +1,7 @@
 .competition-form {
   text-align: center;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .competition-form__button {
@@ -11,13 +13,60 @@
   border: 0;
   padding: 15px;
   width: 280px;
+  margin-bottom: 40px;
 }
 
-.competition-form__bottom {
+.competition-form__text {
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.competition-form__bottom sup {
+.competition-form__text sup {
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .competition-form {
+    width: auto;
+  }
+
+  .competition-form__wrapper {
+    .wrap();
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .competition-form__button-text {
+    order: 6;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .competition-form__button {
+    margin: 0;
+    width: 296px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .competition-form {
+    width: auto;
+  }
+
+  .competition-form__wrapper {
+    .wrap();
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .competition-form__button {
+    width: 296px;
+  }
+
+  .competition-form__button-text {
+    width: 940px;
+  }
 }
