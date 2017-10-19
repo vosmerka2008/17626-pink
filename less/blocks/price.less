@@ -1,5 +1,10 @@
 .price {
   background-color: #f2f2f2;
+  padding: 64px 0 130px;
+}
+
+.price__list {
+
 }
 
 .price__name {
@@ -23,8 +28,44 @@
 }
 
 @media (min-width: @tablet-width) {
+  .price {
+    width: auto;
+     padding: 36px 0 110px;
+  }
+
   .price__wrapper {
     width: 620px;
     margin: 0 auto;
+  }
+
+  .price__name {
+    font-size: 16px;
+    padding: 9px 0 10px;
+    text-align: center;
+  }
+
+  .price__usd {
+  font-size: 18px;
+  }
+
+  .price__list {
+    border: 2px solid #e5e5e5;
+    td {
+      width: 150px;
+    }
+  }
+
+  .price__toggles {
+    .visually-hidden;
+  }
+
+  .price__type {
+    height: 45px;
+    background-color: #ffffff;
+     border: 2px solid #e5e5e5;
+  }
+
+  .empty {
+    border: 2px solid #f2f2f2;
   }
 }
