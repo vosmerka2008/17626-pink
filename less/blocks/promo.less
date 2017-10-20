@@ -1,20 +1,15 @@
 .promo {
   background-color: #1d2631;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom 279px left 0, top 0 center;
+  background-position: bottom 271px left 0, top 0 center;
   background-repeat: no-repeat;
-  min-height: 733px;
   width: 320px;
   margin: 0 auto;
 }
 
 .promo__attachment {
-  padding: 508px 20px 33px;
+  padding: 488px 20px 30px;
   text-align: center;
-}
-
-.promo__attachment-title {
-  font-size: 0;
 }
 
 .promo__attachment-download {
@@ -31,6 +26,21 @@
   border: 3px solid #ffffff;
 }
 
+.promo__attachment-download:hover {
+  background-color: #ffffff;
+  color: #d22856;
+}
+
+.promo__attachment-download:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, 0.3);
+}
+
+.promo__attachment-list {
+// временно
+  min-height: 110px;
+}
+
 .promo__attachment-for {
   color: #ffffff;
 }
@@ -41,12 +51,18 @@
   color: #ffffff;
 }
 
+@media (max-width: 660px) {
+  .promo__attachment-title {
+    .visually-hidden;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .promo {
     background-size: auto 545px, auto 730px;
-    background-position: bottom 0 right 20px, top -110px center;
+    background-position: bottom 0 right 89px, 0 center;
     width: auto;
-    min-height: 620px;
+    padding: 202px 0 109px;
   }
 
   .promo__wrapper {
@@ -64,6 +80,7 @@
   .promo__attachment-download {
     padding-left: 46px;
     padding-right: 46px;
+    margin-bottom: 29px;
   }
 
   .promo__attachment-for {
@@ -75,8 +92,8 @@
     font-size: 40px;
     line-height: 48px;
     color: #ffffff;
-    padding: 0 27px;
-    margin-bottom: 28px;
+    padding: 0 32px;
+    margin-bottom: 30px;
   }
 }
 

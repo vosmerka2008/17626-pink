@@ -76,7 +76,16 @@
     justify-content: space-between;
   }
 
-    .user-photo__item:first-child {
+  .user-photo__descr--day {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .user-photo__quote {
+    order: 2;
+  }
+
+  .user-photo__item:first-child {
     width: 620px;
     display: flex;
     flex-direction: column;
@@ -130,6 +139,11 @@
 
   .user-photo__descr--day {
     width: 940px;
+  }
+
+  .user-photo__descr--day {
+    flex-direction: row;
+    flex-wrap: no-wrap;
   }
 
   .user-photo__item:first-child {
