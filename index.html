@@ -7,10 +7,14 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo">
-            <img class="main-nav__logo-image" src="#" width="" height="" alt="Логотип Pink">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="147" height="40" alt="Логотип Pink">
+            </picture>
           </a>
           <button class="main-nav__button main-nav__button" type="button"><span class="visually-hidden">Закрыть меню</span>
           </button>
@@ -39,15 +43,15 @@
             <p class="promo__attachment-title">Взгляните на жизнь иначе!</p>
             <a class="promo__attachment-download button" href="https://www.apple.com/ru/itunes/download/">Скачать приложение
             </a>
-            <ul class="promo__attachment-list attachment">
-              <li class="attachment__item">
-                <a class="attachment__link attachment__link--iPhone" href="http://mobi-set.net/play-market-dlya-iphone/">iPhone</a>
+            <ul class="promo__attachment-list">
+              <li class="promo__attachment-item">
+                <a class="promo__attachment-link promo__attachment-link--iPhone" href="http://mobi-set.net/play-market-dlya-iphone/">iPhone</a>
               </li>
-              <li class="attachment__item">
-                <a class="attachment__link attachment__link--android" href="http://programmy-dlya-android.ru/internet/237-google-play-market.html">Android</a>
+              <li class="promo__attachment-item">
+                <a class="promo__attachment-link promo__attachment-link--android" href="http://programmy-dlya-android.ru/internet/237-google-play-market.html">Android</a>
               </li>
-              <li class="attachment__item">
-                <a class="attachment__link attachment__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Windows</a>
+              <li class="promo__attachment-item">
+                <a class="promo__attachment-link promo__attachment-link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Windows</a>
               </li>
             </ul>
             <p class="promo__attachment-for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -77,9 +81,11 @@
             </div>
           </div>
           <div class="features__example">
-            <img class="features__example-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Возможности приложения">
-            <img class="features__example-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Возможности приложения">
-            <img class="features__example-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Возможности приложения">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-tablet-3-@2x.png 2x">
+              <img class="features__example-image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Возможности приложения">
+            </picture>
           </div>
         </div>
       </section>
@@ -94,70 +100,88 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="visually-hidden">Отзывы</h2>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__author">25 лет, водитель трамвая</p>
-              <p class="reviews__text"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name"></cite>
-              <p class="reviews__text"></p>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name"></cite>
-              <p class="reviews__text"></p>
-            </blockquote>
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__wrapper">
+          <input type="radio" id="btn-11" name="toggles" checked>
+          <input type="radio" id="btn-22" name="toggles">
+          <input type="radio" id="btn-33" name="toggles">
+          <div class="reviews__pagination">
+            <label for="btn-11"></label>
+            <label for="btn-22"></label>
+            <label for="btn-33"></label>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
-            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
-            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
-          </p>
           <p class="reviews__button">
             <button class="reviews__button-forth" type="button">Вперед
             </button>
             <button class="reviews__button-back" type="button">Назад
             </button>
           </p>
+          <div class="reviews__list">
+             <ul>
+              <li class="reviews__item">
+                <blockquote class="reviews__info">
+                  <cite class="reviews__author-name">Николай Петров</cite>
+                  <p class="reviews__author">25 лет, водитель трамвая</p>
+                  <p class="reviews__text"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
+                </blockquote>
+              </li>
+              <li class="reviews__item">
+                <blockquote class="reviews__info">
+                  <cite class="reviews__author-name">Николай Петров2</cite>
+                  <p class="reviews__author">25 лет, водитель трамвая</p>
+                  <p class="reviews__text"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
+                </blockquote>
+              </li>
+              <li class="reviews__item">
+                <blockquote class="reviews__info">
+                  <cite class="reviews__author-name">Николай Петров3</cite>
+                  <p class="reviews__author">25 лет, водитель трамвая</p>
+                  <p class="reviews__text"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="price">
-        <div class="price__wrapper slider">
-          <h2 class="visually-hidden">Цены</h2>
-          <table class="price__list slider__list">
-            <tr class="price__names">
-              <td></td>
-              <td class="price__name">База<br><span class="price__usd">1,99 USD</span></td>
-              <td class="price__name price__name--hit">Стандарт<br><span class="price__usd">3,99 USD</span></td>
-              <td class="price__name">Анлим<br><span class="price__usd">9,99 USD</span></td>
-            </tr>
-            <tr class="price__type">
-              <td class="price__filter">Розовый фильтр</td>
-              <td class="price__filter"></td>
-              <td class="price__filter">Розовый фильтр</td>
-              <td class="price__filter"></td>
-            </tr>
-            <tr class="price__type">
-              <td class="price__smiley price__smiley--yes">Смайлики</td>
-              <td class="price__smiley price__smiley--no"></td>
-              <td class="price__smiley price__smiley--yes">Смайлики</td>
-              <td class="price__smiley"></td>
-            </tr>
-            <tr class="price__type">
-              <td class="price__comments price__comments--no">Комментарии</td>
-              <td class="price__comments price__comments--no"></td>
-              <td class="price__comments price__comments--no">Комментарии</td>
-              <td class="price__comments price__comments"></td>
-            </tr>
-          </table>
-          <p class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
-            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
-            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
-          </p>
+        <h2 class="visually-hidden">Цены</h2>
+        <div class="price__wrapper">
+          <input type="radio" id="btn-1" name="toggle">
+          <input type="radio" id="btn-2" name="toggle" checked>
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="price__pagination">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="price__table">
+            <table class="price__list">
+              <tr class="price__names">
+                <td class="price__name-1"></td>
+                <td class="price__name">База<br><span class="price__usd">1,99 USD</span></td>
+                <td class="price__name price__name--hit">Стандарт<br><span class="price__usd">3,99 USD</span></td>
+                <td class="price__name">Анлим<br><span class="price__usd">9,99 USD</span></td>
+              </tr>
+              <tr class="price__types">
+                <td class="price__type-1">Розовый фильтр</td>
+                <td class="price__type price__type--yes">Розовый фильтр</td>
+                <td class="price__type price__type--yes">Розовый фильтр</td>
+                <td class="price__type price__type--yes">Розовый фильтр</td>
+              </tr>
+              <tr class="price__types">
+                <td class="price__type-1">Смайлики</td>
+                <td class="price__type price__type--no">Смайлики</td>
+                <td class="price__type price__type--yes">Смайлики</td>
+                <td class="price__type price__type--yes">Смайлики</td>
+              </tr>
+              <tr class="price__types">
+                <td class="price__type-1">Комментарии</td>
+                <td class="price__type price__type--no">Комментарии</td>
+                <td class="price__type price__type--no">Комментарии</td>
+                <td class="price__type price__type--yes">Комментарии</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </section>
       <section class="info">

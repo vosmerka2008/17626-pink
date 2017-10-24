@@ -1,11 +1,16 @@
 .price {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
   background-color: #f2f2f2;
-  padding: 64px 0 130px;
+  padding: 64px 0 100px;
 }
 
 .price__name {
   font-size: 18px;
   line-height: 30px;
+  padding: 17px 0 19px;
+  text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   color: #ffffff;
@@ -13,9 +18,14 @@
   background-color: @base-color;
 }
 
-.price__type {
+.price__types {
   line-height: 30px;
   text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.price__type {
+  padding: 15px 23px 15px;
 }
 
 .price__usd {
@@ -23,21 +33,113 @@
   font-weight: lighter;
 }
 
+.price__list {
+  border-collapse: collapse;
+  width: 262%;
+  border: 2px solid #e5e5e5;
+  td {
+    width: 278px;
+    border: 2px solid #e5e5e5;
+  }
+}
+
+.price__wrapper input[type=radio] {
+  display: none;
+}
+
+.price__pagination {
+  width: 200px;
+  height: 10px;
+  margin: 0 0 0 -100px;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  bottom: 56px;
+}
+
+.price__pagination label {
+  width: 6px;
+  height: 6px;
+  margin: 0 6px;
+  display: inline-block;
+  background: #b5b9be;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: content-box;
+  vertical-align: middle;
+}
+
+.price__table {
+  overflow: hidden;
+}
+
+#btn-1:checked ~ .price__pagination label[for="btn-1"], #btn-2:checked ~ .price__pagination label[for="btn-2"], #btn-3:checked ~ .price__pagination label[for="btn-3"] {
+  border: 3px solid #283645;
+  background: transparent;
+}
+
+#btn-1:checked ~ .price__table .price__list {
+  transform: translateX(0);
+}
+
+#btn-2:checked ~ .price__table .price__list {
+  transform: translateX(-31%);
+}
+
+#btn-3:checked ~ .price__table .price__list {
+  transform: translateX(-62%);
+}
+
+.price__name--hit::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0px;
+  width: 73px;
+  height: 74px;
+}
+
+.price__name--hit {
+  position: relative;
+}
+
+@media (max-width: 660px) {
+  .price__type-1,
+  .price__name-1 {
+    display: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .price__type {
+    font-size: 0;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .price {
     width: auto;
-    padding: 36px 0 110px;
+    padding: 33px 0 67px;
   }
 
   .price__wrapper {
-    width: 620px;
-    margin: 0 auto;
+    .wrap();
+  }
+
+  .price__table {
+    overflow: inherit;
+  }
+
+  #btn-1:checked ~ .price__table .price__list, #btn-2:checked ~ .price__table .price__list, #btn-3:checked ~ .price__table .price__list {
+    transform: none;
   }
 
   .price__name {
     font-size: 16px;
-    padding: 9px 0 10px;
-    text-align: center;
+    padding: 14px 0 5px;
   }
 
   .price__usd {
@@ -45,19 +147,24 @@
   }
 
   .price__list {
+    width: 100%;
     border: 2px solid #e5e5e5;
     td {
-      width: 150px;
+      width: 155px;
+      border: 2px solid #e5e5e5;
     }
   }
 
-  .price__toggles {
-    .visually-hidden;
+  .price__wrapper input[type=radio] {
+    display: none;
   }
 
-  .price__type {
-    height: 45px;
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
+  .price__pagination {
+    display: none;
+  }
+
+  .price__type-1 {
+    text-transform: none;
+    padding: 8px 16px;
   }
 }

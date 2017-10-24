@@ -7,12 +7,12 @@
   </head>
   <body>
     <header class="page-heder">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
-          <a class="main-nav__logo" style="color: white">
+          <a class="main-nav__logo">
             <img class="main-nav__logo-image" src="#" width="" height="" alt="Логотип Pink">
           </a>
-          <button class="main-nav__button" type="button">Закрыть меню
+          <button class="main-nav__button" type="button"><span class="visually-hidden">Закрыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -66,30 +66,30 @@
               <li class="details__wrapper">
                 <ul>
                   <li class="details__item">
-                    <label class="details__label"><input class="details__input" type="checkbox" name="sulfis" checked>Сделал селфи с акулой</label>
+                    <label class="details__label"><input class="visually-hidden" type="checkbox" name="sulfis" checked><span class="details__checkbox-indicator"></span>Сделал селфи с акулой</label>
                   </li>
                   <li class="details__item">
-                    <label class="details__label"><input class="details__input" type="checkbox" name="sulfis" checked>Обгорел на пляже</label>
-                  </li>
-                </ul>
-              </li>
-              <li class="details__wrapper">
-                <ul>
-                  <li class="details__item">
-                    <label class="details__label"><input class="details__input" type="checkbox" name="norris">Видел Чака Норриса</label>
-                  </li>
-                  <li class="details__item">
-                    <label class="details__label"><input class="details__input" type="checkbox" name="souvenirs">Накупил сувениров</label>
+                    <label class="details__label"><input class="visually-hidden" type="checkbox" name="sulfis" checked><span class="details__checkbox-indicator"></span>Обгорел на пляже</label>
                   </li>
                 </ul>
               </li>
               <li class="details__wrapper">
                 <ul>
                   <li class="details__item">
-                    <label class="details__label"><input class="details__input" type="checkbox" name="tower" checked>Удержал башню</label>
+                    <label class="details__label"><input class="visually-hidden" type="checkbox" name="norris"><span class="details__checkbox-indicator"></span>Видел Чака Норриса</label>
                   </li>
                   <li class="details__item">
-                    <label class="details__label"><input class="details__input" type="checkbox" name="hotel">Разгромил отель</label>
+                    <label class="details__label"><input class="visually-hidden" type="checkbox" name="souvenirs"><span class="details__checkbox-indicator"></span>Накупил сувениров</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="details__wrapper">
+                <ul>
+                  <li class="details__item">
+                    <label class="details__label"><input class="visually-hidden" type="checkbox" name="tower" checked><span class="details__checkbox-indicator"></span>Удержал башню</label>
+                  </li>
+                  <li class="details__item">
+                    <label class="details__label"><input class="visually-hidden" type="checkbox" name="hotel"><span class="details__checkbox-indicator"></span>Разгромил отель</label>
                   </li>
                 </ul>
               </li>
@@ -98,11 +98,11 @@
           <fieldset class="personal-contacts">
             <legend class="personal-contacts__description">Контактная информация</legend>
             <div class="personal-contacts__wrapper">
-              <p class="personal-contacts__item">
+              <p class="personal-contacts__item personal-contacts__item--tel">
                 <label class="personal-contacts__label" for="phone">Номер телефона</label>
                 <input class="personal-contacts__input" id="phone" type="tel" name="tel" placeholder="Номер,пожалуйста">
               </p>
-              <p class="personal-contacts__item">
+              <p class="personal-contacts__item personal-contacts__item--mail">
                 <label class="personal-contacts__label" for="mail">Адрес почты</label>
                 <input class="personal-contacts__input" id="mail" type="email" name="email" placeholder="Введите почту *">
               </p>
@@ -112,13 +112,13 @@
             <legend class="attachments__description">С каким приложением путешествовали?</legend>
             <ul class="attachments__list browser">
               <li class="browser__item">
-                <label class="browser__label"><input class="browser__input" type="radio" name="type" value="iOS" checked>Pink для iOS</label>
+                <label class="browser__label"><input class="visually-hidden" type="radio" name="type" value="iOS" checked><span class="browser__radio-indicator"></span>Pink для iOS</label>
               </li>
               <li class="browser__item">
-                <label class="browser__label"><input class="browser__input" type="radio" name="type" value="Android">Pink на Android</label>
+                <label class="browser__label"><input class="visually-hidden" type="radio" name="type" value="Android"><span class="browser__radio-indicator"></span>Pink на Android</label>
               </li>
               <li class="browser__item">
-                <label class="browser__label"><input class="browser__input" type="radio" name="type" value="Phone">Windows Phone</label>
+                <label class="browser__label"><input class="visually-hidden" type="radio" name="type" value="Phone"><span class="browser__radio-indicator"></span>Windows Phone</label>
               </li>
             </ul>
           </fieldset>

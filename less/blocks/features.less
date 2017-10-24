@@ -59,12 +59,11 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .features__example-image:not(:first-child) {
-    .visually-hidden
-  }
-}
-
+//@media (max-width: 1200px) {
+  //.features__example-image:not(:first-child) {
+    //.visually-hidden
+ // }
+//
 @media (min-width: @desktop-width) {
   .features {
     width: auto;
@@ -100,5 +99,9 @@
   .features__example {
     display: flex;
     justify-content: space-around;
+  }
+
+  .features__example-image {
+    margin-bottom: 0;
   }
 }

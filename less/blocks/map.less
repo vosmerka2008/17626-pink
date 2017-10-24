@@ -13,17 +13,22 @@
 }
 
 @media (min-width: @tablet-width) {
+  .map {
+    width: auto;
+  }
+
   .map__address {
-    width: 620px;
-    margin: 0 auto;
+    .wrap();
     min-height: 373px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .map__address {
-    width: 940px;
-    margin: 0 auto;
+  .map {
+    width: auto;
+  }
 
+  .map__address {
+    .wrap();
   }
 }

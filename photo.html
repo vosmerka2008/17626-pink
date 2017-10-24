@@ -7,12 +7,12 @@
   </head>
   <body>
     <header class="page-heder">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo">
             <img class="main-nav__logo-image" src="#" width="" height="" alt="Логотип Pink">
           </a>
-          <button class="main-nav__button" type="button">Закрыть, открыть меню
+          <button class="main-nav__button" type="button"><span class="visually-hidden">Закрыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -48,7 +48,11 @@
         <div class="user-photo__wrapper">
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo__image--description" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="user-photo__image user-photo__image--description" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr user-photo__descr--day">
                 <cite class="user-photo__author">
@@ -65,17 +69,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo--description" src="img/photo-car-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Левон
-                  <time>(5 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Вчера он на луну летал, сегодня в руки к нам попал.
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Левон
+                <time>(5 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Вчера он на луну летал, сегодня в руки к нам попал.
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">356</span>
                 </a>
@@ -84,17 +90,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo--description" src="img/photo-drumset-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Антон
-                  <time>(12 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Соседи будут рады!
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Антон
+                <time>(12 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Соседи будут рады!
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">666</span>
                 </a>
@@ -103,17 +111,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo--description" src="img/photo-window-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Борис
-                  <time>(20 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Здесь могла быть ваша цитата о высоком и вечном.
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Борис
+                <time>(20 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Здесь могла быть ваша цитата о высоком и вечном.
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">215</span>
                 </a>
@@ -122,17 +132,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo--description" src="img/photo-fair-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Сергей
-                  <time>(25 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Самая кубанская в мире!
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Сергей
+                <time>(25 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Самая кубанская в мире!
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">4</span>
                 </a>
@@ -141,17 +153,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo__image--description" src="img/photo-pov-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Максим
-                  <time>(40 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Где снег-то?
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Максим
+                <time>(40 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Где снег-то?
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">150</span>
                 </a>
@@ -160,17 +174,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo__image--description" src="img/photo-wing-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Надежда
-                  <time>(45 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Всем GM и взаимные лайки!
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Надежда
+                <time>(45 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Всем GM и взаимные лайки!
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">2560</span>
                 </a>
@@ -188,7 +204,11 @@
       <section class="loading-photo">
         <div class="loading-photo__wrapper">
           <div class="loading-photo__photo">
-            <img class="loading-photo__image" src="img/photo-road-mobile@1x.jpg" width="" height="" alt="фото для загрузки">
+             <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
           </div>
           <form class="loading-photo__settings">
             <div class="loading-photo__settings-range">

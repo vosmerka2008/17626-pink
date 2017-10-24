@@ -42,9 +42,36 @@
     margin-bottom: 60px;
   }
 
+  .personal-contacts__wrapper {
+    position: relative;
+  }
+
+  .personal-contacts__item::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    right: 2px;
+    bottom: 82px;
+    background: #e5e5e5;
+  }
+
+  .personal-contacts__item--tel::before {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .personal-contacts__item--mail::before {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .personal-contacts__item {
     display: flex;
     flex-direction: column-reverse;
+    position: relative;
   }
 
   .personal-contacts__label {
@@ -89,5 +116,9 @@
   .personal-contacts__wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .personal-contacts__item::before {
+    bottom: 60px;
   }
 }
