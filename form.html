@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <header class="page-heder">
@@ -46,7 +50,7 @@
       </section>
       <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="competition-form__wrapper">
-          <fieldset class="personal">
+          <fieldset class="personal form-fieldset">
             <p class="personal__item">
                 <label class="personal__label" for="user-surname">Фамилия:</label>
                 <input class="personal__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *">
@@ -60,8 +64,8 @@
                 <input class="personal__input" id="user-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
-          <fieldset class="achievements">
-            <legend class="achievements__description">Ваши безбашенные достижения в путешествии</legend>
+          <fieldset class="achievements form-fieldset">
+            <legend class="achievements__description form-legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="achievements__list details">
               <li class="details__wrapper">
                 <ul>
@@ -95,8 +99,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="personal-contacts">
-            <legend class="personal-contacts__description">Контактная информация</legend>
+          <fieldset class="personal-contacts form-fieldset">
+            <legend class="personal-contacts__description form-legend">Контактная информация</legend>
             <div class="personal-contacts__wrapper">
               <p class="personal-contacts__item personal-contacts__item--tel">
                 <label class="personal-contacts__label" for="phone">Номер телефона</label>
@@ -108,8 +112,8 @@
               </p>
             </div>
           </fieldset>
-          <fieldset class="attachments">
-            <legend class="attachments__description">С каким приложением путешествовали?</legend>
+          <fieldset class="attachments form-fieldset">
+            <legend class="attachments__description form-legend">С каким приложением путешествовали?</legend>
             <ul class="attachments__list browser">
               <li class="browser__item">
                 <label class="browser__label"><input class="visually-hidden" type="radio" name="type" value="iOS" checked><span class="browser__radio-indicator"></span>Pink для iOS</label>
@@ -122,8 +126,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="emotions">
-            <legend class="emotions__description">Опишите свои эмоции</legend>
+          <fieldset class="emotions form-fieldset">
+            <legend class="emotions__description form-legend">Опишите свои эмоции</legend>
             <textarea class="emotions__field" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
           <div class="competition-form__button-text">
