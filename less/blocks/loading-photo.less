@@ -9,24 +9,98 @@
   justify-content: center;
 }
 
+.loading-photo__range-filter {
+  -webkit-appearance: none;
+  width: 240px;
+  height: 2px;
+  background-color: @base-color;
+  outline: none;
+}
+
+.loading-photo__range-wrap {
+  margin-bottom: 70px;
+}
+
+.loading-photo__range-filter::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  border: 2px solid #d22856;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.loading-photo__range-filter:active::-webkit-slider-thumb {
+  background-color: #d22856;
+}
+
 .loading-photo__image {
   display: block;
   margin: 0 auto;
 }
 
-.loading-photo__post {
+.loading-photo__photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.loading-photo__settings-types input[type=radio] {
+  display: none;
+}
+
+.loading-photo__settings-types {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading-photo__settings-type {
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.loading-photo__button {
+  cursor: pointer;
+}
+
+.loading-photo__button:hover path {
+  fill: #8d949b;
+}
+
+.loading-photo__button:hover rect {
+  fill: #8d949b;
+}
+
+#trimming:checked ~ .loading-photo__settings-type label[for="trimming"] path,
+#fill:checked ~ .loading-photo__settings-type label[for="fill"] path,
+#bright:checked ~ .loading-photo__settings-type label[for="bright"] path {
+  fill: #d22856;
+}
+
+#fill:checked ~ .loading-photo__settings-type label[for="fill"] rect {
+  fill: #d22856;
+}
+
+.loading-photo__post {loading-photo__settings-type
   display: inline-block;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
   background-color: transparent;
-  padding: 16px 81px;
+  padding: 16px 91px;
   margin-bottom: 12px;
   border-radius: 50px;
   text-align: center;
   vertical-align: middle;
   border: 3px solid #d22856;
   color: #d22856;
+  outline: none;
 }
 
 .loading-photo__annulment {
@@ -35,24 +109,22 @@
   line-height: 18px;
   font-weight: bold;
   background-color: transparent;
-  padding: 16px 94px;
+  padding: 16px 105px;
+  margin-bottom: 40px;
   border-radius: 50px;
   text-align: center;
   vertical-align: middle;
   border: 3px solid @base-color;
   color: @base-color;
   opacity: 0.1;
+  outline: none;
 }
 
 @media (max-width: 660px) {
-  .loading-photo__range--fill,
-  .loading-photo__range--bright {
-    .visually-hidden;
+  .loading-photo__range-wrap--1,
+  .loading-photo__range-wrap--2 {
+    display: none;
   }
-}
-
-.loading-photo__range {
-  margin-bottom: 14px;
 }
 
 @media (min-width: @tablet-width) {
@@ -65,7 +137,7 @@
     .wrap();
     display: flex;
     justify-content: space-between;
-    padding: 55px 20px 55px 0;
+    padding: 55px 0 13px;
     box-sizing: border-box;
   }
 
@@ -73,24 +145,30 @@
     width: 300px;
   }
 
-  .loading-photo__settings {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 263px;
+  .loading-photo__settings-types {
+    flex-direction: row;
   }
 
   .loading-photo__settings-type {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: auto;
+    margin: 0;
   }
 
-  .loading-photo__range {
+  .loading-photo__range-wrap {
     margin-bottom: 50px;
+  }
+
+  .loading-photo__range-wrap:last-child {
+    margin-bottom: 90px;
   }
 
   .loading-photo__post {
     margin-bottom: 25px;
+  }
+
+  .loading-photo__annulment {
+    margin: 0;
   }
 }
 
@@ -102,36 +180,7 @@
 
   .loading-photo__wrapper {
     .wrap();
-    display: flex;
-    justify-content: space-between;
-    padding: 57px 60px 57px 80px;
-    box-sizing: border-box;
-  }
-
-  .loading-photo__settings {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .loading-photo__settings-range {
-    padding-right: 30px;
-    justify-content: space-between;
-    display: flex;
-  }
-
-  .loading-photo__settings-type {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .loading-photo__settings {
-    width: 410px;
-  }
-
-  .loading-photo__ranges {
-    display: flex;
-    flex-direction: column;
+    padding: 50px 80px;
   }
 
   .loading-photo__buttons{
@@ -148,3 +197,5 @@
     padding: 16px 55px;
   }
 }
+
+

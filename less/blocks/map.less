@@ -5,7 +5,7 @@
 
 .map__image {
   display: block;
-  margin-top: -425px;
+  margin-top: -225px;
 }
 
 .map__address {
@@ -13,17 +13,27 @@
 }
 
 @media (min-width: @tablet-width) {
+  .map {
+    width: auto;
+  }
+
   .map__address {
-    width: 620px;
+    width: 660px;
     margin: 0 auto;
-    min-height: 373px;
+  }
+
+  .map__image {
+    margin-top: -476px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .map__address {
-    width: 940px;
-    margin: 0 auto;
+  .map {
+    width: auto;
+  }
 
+  .map__address {
+    width: 1200px;
+    margin: 0 auto;
   }
 }

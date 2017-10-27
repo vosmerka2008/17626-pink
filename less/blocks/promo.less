@@ -1,10 +1,14 @@
 .promo {
   background-color: #1d2631;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom 271px left 0, top 0 center;
+  background-position: bottom 271px right 63px, top 0 center;
   background-repeat: no-repeat;
   width: 320px;
   margin: 0 auto;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 314px auto, 462px auto;
+  }
 }
 
 .promo__attachment {
@@ -37,8 +41,33 @@
 }
 
 .promo__attachment-list {
-// временно
-  min-height: 110px;
+  padding: 27px 37px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo__attachment-link {
+  font-size: 0;
+  display: inline-block;
+}
+
+.promo__attachment-link--iPhone {
+  height: 57px;
+  width: 47px;
+  background: url("../img/logo-apple.svg") no-repeat;
+}
+
+.promo__attachment-link--android {
+  height: 47px;
+  width: 43px;
+  background: url("../img/logo-android.svg") no-repeat;
+}
+
+.promo__attachment-link--windows {
+  height: 41px;
+  width: 44px;
+  background: url("../img/logo-microsoft.svg") no-repeat;
 }
 
 .promo__attachment-for {
@@ -53,16 +82,20 @@
 
 @media (max-width: 660px) {
   .promo__attachment-title {
-    .visually-hidden;
+  .visually-hidden;
   }
 }
 
 @media (min-width: @tablet-width) {
   .promo {
-    background-size: auto 545px, auto 730px;
-    background-position: bottom 0 right 89px, 0 center;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: bottom 0 right 180px, bottom 0 center;
     width: auto;
     padding: 202px 0 109px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: 545px auto, 729px auto;
+    }
   }
 
   .promo__wrapper {
@@ -72,15 +105,12 @@
   .promo__attachment {
     display: flex;
     flex-direction: column;
-    align-items: start;
     padding: 0;
-    width: 310px;
+    width: 300px;
   }
 
   .promo__attachment-download {
-    padding-left: 46px;
-    padding-right: 46px;
-    margin-bottom: 29px;
+    padding: 16px 45px;
   }
 
   .promo__attachment-for {
@@ -95,19 +125,27 @@
     padding: 0 32px;
     margin-bottom: 30px;
   }
+
+  .promo__attachment-list {
+    padding: 42px 48px 35px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .promo {
-    background-size: auto 645px, auto 853px;
-    background-position: bottom 0 left 473px, top -110px center;
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: bottom 0 right 0, bottom 0 center;
     width: auto;
-    min-height: 853px;
+    padding: 216px 0 120px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+      background-size: 645px auto, 853px auto;
+    }
   }
 
   .promo__attachment {
     padding: 0;
-    width: 310px;
+    width: 300px;
   }
 
   .promo__wrapper {
@@ -118,12 +156,16 @@
     font-size: 50px;
     line-height: 60px;
     color: #ffffff;
-    margin-bottom: px;
+    margin-bottom: 52px;
   }
 
   .promo__attachment-download {
-    padding-left: 46px;
-    padding-right: 46px;
+    font-size: 21px;
+    padding: 16px 27px;
+  }
+
+  .promo__attachment-list {
+    padding: 66px 48px 50px;
   }
 
   .promo__attachment-for {

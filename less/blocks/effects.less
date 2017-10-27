@@ -26,7 +26,36 @@
   }
 
   .effects__content {
+    position: relative;
     padding: 97px 24px 50px 310px;
+  }
+
+  .effects__content::after {
+    width: 205px;
+    height: 205px;
+    position: absolute;
+    top: 114px;
+    left: 16px;
+    content: "24";
+    color: #d22856;
+    font-size: 95px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 165px;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+  }
+
+  .effects__content::before {
+    width: 238px;
+    height: 276px;
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 238px;
+    top: 60px;
+    left: 0;
   }
 
   .effects__title {
@@ -48,14 +77,42 @@
   }
 
   .effects__content {
-    padding: 110px 0 120px 360px;
+    padding: 118px 0 114px 365px;
+    position: relative;
   }
 
   .effects__title {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 
   .effects__text {
-    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+
+  .effects__about {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effects__content::before {
+    width: 298px;
+    height: 345px;
+    background-size: 298px;
+    top: 28px;
+    left: 0;
+  }
+
+  .effects__content::after {
+    width: 250px;
+    height: 250px;
+    top: 97px;
+    left: 25px;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 205px;
+    border: 15px solid #d22856;
+    border-radius: 50%;
   }
 }

@@ -5,7 +5,6 @@
     display: block;
     padding: 17px 0 14px;
 
-
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
@@ -13,6 +12,12 @@
 
     background-color: @base-color;
     border-top: 1px solid #485461;
+  }
+}
+
+.site-list__item {
+  border-top: 1px solid #000000;
+  &:last-child {
     border-bottom: 1px solid #000000;
   }
 }
@@ -36,10 +41,8 @@
       line-height: 18px;
       text-transform: none;
       border: 0;
-      background-color: #10161b;
-      opacity: 0.5;
       color: #ffffff;
-      opacity: 1;
+      background-color: transparent;
     }
   }
 }

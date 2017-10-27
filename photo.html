@@ -4,22 +4,56 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <header class="page-heder">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
-          <a class="main-nav__logo">
-            <img class="main-nav__logo-image" src="#" width="" height="" alt="Логотип Pink">
+          <a class="main-nav__logo-mobile" href="index.html">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+              <g>
+                <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+                <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+                <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+                <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+              </g>
+            </svg>
           </a>
-          <button class="main-nav__button" type="button">Закрыть, открыть меню
+          <a class="main-nav__logo-tablet" href="index.html">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+              <g>
+                <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
+                <path fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
+                <path fill="#FFFFFF" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.224,0.58,1.224,1.256v20.349c0,0.676-0.481,1.19-1.158,1.19h-0.129c-0.548,0-0.935-0.321-1.319-0.772l-13.975-17.868v17.45c0,0.676-0.547,1.256-1.256,1.256c-0.676,0-1.223-0.58-1.223-1.256V18.532 H102.744z"/>
+                <path fill="#FFFFFF" d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.935c0,0.676-0.578,1.288-1.286,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.402-10.463l-4.863,4.861 v4.894c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"/>
+              </g>
+              <path fill="#FFFFFF" d="M60.498,28.266"/>
+              <path fill="#FFFFFF" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531c4.475,0,8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
+            </svg>
+          </a>
+          <a class="main-nav__logo-desktop" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.30029 40.375" width="147px" height="40px">
+              <path class="main-nav__logo-desktop-white" fill="#ffffff" d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.064c0 4.86-4.057 7.373-8.854 7.373h-5.474v6.825c0 .708-.58 1.287-1.29 1.287-.675 0-1.255-.58-1.255-1.287v-20.12h.001zm8.114 10.98c3.734 0 6.181-1.996 6.181-4.96v-.062c0-3.22-2.414-4.894-6.052-4.894h-5.7v9.918h5.57v-.002zM93.603 18.5c0-.708.58-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283c0 .708-.58 1.287-1.288 1.287-.676 0-1.255-.579-1.255-1.287V18.5zm9.141.032c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.675 0 1.224.58 1.224 1.256v20.348c0 .677-.48 1.19-1.158 1.19h-.129c-.548 0-.935-.32-1.318-.772l-13.976-17.867v17.45c0 .676-.547 1.256-1.257 1.256-.675 0-1.222-.58-1.222-1.257V18.532h-.002zm25.429-.032c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.168c.29-.257.58-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.163.644-.42.901l-7.985 7.92 8.565 10.56c.224.292.353.547.353.936 0 .676-.577 1.288-1.285 1.288-.482 0-.807-.259-1.03-.58l-8.402-10.464-4.863 4.862v4.894a1.29 1.29 0 0 1-1.286 1.288c-.677 0-1.257-.58-1.257-1.288V18.5h-.004z"></path>
+              <path class="main-nav__logo-desktop-star" fill="#d22856" d="M98.498 9.875a3.623 3.623 0 0 1-3.623-3.624 3.625 3.625 0 0 1-3.625 3.624 3.625 3.625 0 0 1 3.625 3.624 3.623 3.623 0 0 1 3.623-3.624z"></path>
+              <g class="main-nav__logo-desktop-white">
+                <path class="main-nav__logo-desktop-white" fill="#ffffff" d="M43.094 19.313c.246 0 .489.014.73.033a2.492 2.492 0 0 0-2.136-1.221 1.993 1.993 0 0 1-1.884-1.354c-.727.208-1.425.482-2.09.816.063.017.123.038.189.038a2 2 0 0 1 2 2c0 .096-.015.188-.028.281 1-.382 2.084-.593 3.219-.593z"></path>
+                <path class="main-nav__logo-desktop-white" fill="#ffffff" d="M60.462 28.016L55.287 6.65C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 1 0 0 3c4.856 0 5.575 3.729 5.64 4.143l4.766 19.7H55.02c-.445-3.556-2.453-6.627-5.305-8.521a2.504 2.504 0 0 0-1.529 2.303c0 .088-.015.17-.026.256a9.036 9.036 0 0 1 3.83 5.965c.08.488.134.987.134 1.5 0 .511-.053 1.011-.135 1.5-.716 4.271-4.421 7.53-8.896 7.53-4.475 0-8.18-3.259-8.896-7.53a9.041 9.041 0 0 1-.135-1.5c0-.513.053-1.012.135-1.5a8.957 8.957 0 0 1 .808-2.485 1.994 1.994 0 0 1-1.852-1.984.737.737 0 0 0-.192-.488 11.951 11.951 0 0 0-1.795 4.957h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42l4.767-19.7C8.25 6.728 8.97 3 13.827 3a1.5 1.5 0 1 0 0-3c-6.007 0-8.24 4.303-8.6 6.65L.052 28.017c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.08.629.215 1.237.387 1.83a.725.725 0 0 0 .102-.353 2 2 0 0 1 2-2c.166 0 .324.025.478.063a8.326 8.326 0 0 1-.074-1.042c0-.512.053-1.011.135-1.5.715-4.27 4.42-7.531 8.896-7.531s8.18 3.26 8.896 7.53c.082.49.135.989.135 1.5a9.04 9.04 0 0 1-.135 1.5c-.715 4.273-4.421 7.532-8.896 7.532a8.958 8.958 0 0 1-5.386-1.794c-.35.302-.8.491-1.3.491a.75.75 0 0 0-.748.748c0 .29-.065.564-.176.812a11.939 11.939 0 0 0 7.614 2.743c6.125 0 11.185-4.604 11.927-10.53h1.814c.742 5.927 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895 0 1.692-.716 1.426-1.825z"></path>
+              </g>
+              <path class="main-nav__logo-desktop-star" fill="#d22856" d="M50.686 16.125a4.499 4.499 0 0 1-4.499-4.499 4.499 4.499 0 0 1-4.499 4.499 4.499 4.499 0 0 1 4.499 4.499 4.498 4.498 0 0 1 4.499-4.499zm-12.782 3.501a2.748 2.748 0 0 1-2.75-2.749 2.748 2.748 0 0 1-2.748 2.749 2.748 2.748 0 0 1 2.749 2.749 2.749 2.749 0 0 1 2.749-2.749zm-27.17 14.446a2.748 2.748 0 0 1-2.75-2.75c0 1.52-1.23 2.75-2.748 2.75a2.747 2.747 0 0 1 2.749 2.748 2.748 2.748 0 0 1 2.749-2.748z"></path>
+            </svg>
+          </a>
+          <button class="main-nav__button main-nav__button" type="button"><span class="visually-hidden">Закрыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Фотографии</a>
+              <a>Фотографии</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Конкурс</a>
@@ -40,15 +74,19 @@
       </section>
       <section class="page-main__text">
         <div class="page-main__text-wrapper">
-          <p class="page-main__text-content page-main__text-content--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+          <p class="page-main__text-top">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
         </div>
       </section>
       <section class="user-photo">
         <div class="user-photo__wrapper">
           <div class="user-photo__item">
-            <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo__image--description" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото пользователя">
+            <a class="user-photo__photo user-photo__photo--descr" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr user-photo__descr--day">
                 <cite class="user-photo__author">
@@ -65,17 +103,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo--description" src="img/photo-car-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Левон
-                  <time>(5 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Вчера он на луну летал, сегодня в руки к нам попал.
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Левон
+                <time>(5 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Вчера он на луну летал, сегодня в руки к нам попал.
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">356</span>
                 </a>
@@ -84,17 +124,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo--description" src="img/photo-drumset-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Антон
-                  <time>(12 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Соседи будут рады!
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Антон
+                <time>(12 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Соседи будут рады!
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">666</span>
                 </a>
@@ -103,17 +145,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo--description" src="img/photo-window-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Борис
-                  <time>(20 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Здесь могла быть ваша цитата о высоком и вечном.
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Борис
+                <time>(20 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Здесь могла быть ваша цитата о высоком и вечном.
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">215</span>
                 </a>
@@ -122,17 +166,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo--description" src="img/photo-fair-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Сергей
-                  <time>(25 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Самая кубанская в мире!
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Сергей
+                <time>(25 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Самая кубанская в мире!
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">4</span>
                 </a>
@@ -141,17 +187,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo__image--description" src="img/photo-pov-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Максим
-                  <time>(40 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Где снег-то?
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Максим
+                <time>(40 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Где снег-то?
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">150</span>
                 </a>
@@ -160,17 +208,19 @@
           </div>
           <div class="user-photo__item">
             <a class="user-photo__photo" href="#">
-              <img class="user-photo__image user-photo__image--description" src="img/photo-wing-mobile@1x.jpg" width="" height="" alt="Фото пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото пользователя">
+              </picture>
             </a>
             <div class="user-photo__descr">
-              <div class="user-photo__descr-author">
-                <cite class="user-photo__author">
-                  Надежда
-                  <time>(45 часов назад)</time>
-                </cite>
-                <blockquote class="user-photo__quote">Всем GM и взаимные лайки!
-                </blockquote>
-              </div>
+              <cite class="user-photo__author">
+                Надежда
+                <time>(45 часов назад)</time>
+              </cite>
+              <blockquote class="user-photo__quote">Всем GM и взаимные лайки!
+              </blockquote>
               <p class="user-photo__like">
                 <a class="user-photo__like-number" href="#">Нравится: <span class="user-photo__like-sum">2560</span>
                 </a>
@@ -181,25 +231,56 @@
       </section>
       <section class="page-main__text">
         <div class="page-main__text-wrapper">
-          <p class="page-main__text-content">Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          <p class="page-main__text-bottom">Затмите их всех! Выкладывайте все, что накопилось в телефоне!
           </p>
         </div>
       </section>
       <section class="loading-photo">
+        <h2 class="visually-hidden">Загрузка фото</h2>
         <div class="loading-photo__wrapper">
           <div class="loading-photo__photo">
-            <img class="loading-photo__image" src="img/photo-road-mobile@1x.jpg" width="" height="" alt="фото для загрузки">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="user-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото пользователя">
+            </picture>
           </div>
           <form class="loading-photo__settings">
             <div class="loading-photo__settings-range">
-              <input class="visually-hidden" type="radio" id="trimming" name="settings"  value="trimming">
-              <input  class="visually-hidden" type="radio" id="fill" name="settings"  value="fill">
-              <input  class="visually-hidden" type="radio" id="bright" name="settings" value="bright">
-              <p class="loading-photo__settings-type">
-                <label class="loading-photo__button loading-photo__button--trimming" for="trimming">Обрезка<input class="loading-photo__range loading-photo__range--trimming" type="range"></label>
-                <label class="loading-photo__button loading-photo__button--fill" for="fill">Заливка <input class="loading-photo__range loading-photo__range--fill" type="range"></label>
-                <label class="loading-photo__button loading-photo__button--bright" for="bright">Яркость<input class="loading-photo__range loading-photo__range--bright" type="range"></label>
-              </p>
+              <div class="loading-photo__settings-types">
+              <input type="radio" id="trimming" name="settings" value="trimming" checked>
+              <input type="radio" id="fill" name="settings"  value="fill">
+              <input type="radio" id="bright" name="settings" value="bright">
+              <div class="loading-photo__settings-type">
+                <label class="loading-photo__button loading-photo__button--trimming" for="trimming">Обрезка
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="#b5b9be" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                  </svg>
+                </label>
+                <label class="loading-photo__button loading-photo__button--fill" for="fill">Заливка
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="#b5b9be" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                    <rect fill="#b5b9be" y="40" width="48" height="3"/>
+                  </svg>
+                </label>
+                <label class="loading-photo__button loading-photo__button--bright" for="bright">Яркость
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <path fill="#b5b9be" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                    <path fill="#b5b9be" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                  </svg>
+                </label>
+              </div>
+              <div class="loading-photo__range">
+                <div class="loading-photo__range-wrap loading-photo__range-wrap--1">
+                <input class=" loading-photo__range-filter" type="range" id="range-trimming">
+                </div>
+                <div class="loading-photo__range-wrap loading-photo__range-wrap--2">
+                <input class="loading-photo__range-filter" type="range" id="range-fill">
+                </div>
+                <div class="loading-photo__range-wrap loading-photo__range-wrap--3">
+                <input class="loading-photo__range-filter" type="range" id="range-bright">
+                </div>
+              </div>
             </div>
             <div class="loading-photo__buttons">
               <button class="loading-photo__post button" type="submit">Запостить
@@ -213,8 +294,16 @@
     </main>
     <footer class="page-footer-add">
       <div class="page-footer-add__wrapper">
-        <a class="page-footer-add__logo">
-          <img class="page-footer-add__logo-image" src="index.html" width="" height="" alt="Pink">
+        <a class="page-footer-add__logo">Pink
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+            <g class="page-footer-add__logo-pink">
+              <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
+              <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
+              <path fill="#283645" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.225,0.58,1.225,1.256v20.349c0,0.677-0.48,1.19-1.158,1.19h-0.129 c-0.548,0-0.936-0.321-1.318-0.772l-13.976-17.867v17.449c0,0.677-0.547,1.257-1.257,1.257c-0.676,0-1.223-0.58-1.223-1.257V18.532 H102.744z"/>
+              <path fill="#283645" d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.16 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.936c0,0.676-0.577,1.288-1.285,1.288c-0.482,0-0.807-0.259-1.03-0.58l-8.401-10.464l-4.863,4.861 v4.895c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"/>
+            </g>
+            <path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
+          </svg>
         </a>
         <div class="page-footer-add__social social">
           <ul class="social__list">
@@ -231,7 +320,11 @@
         </div>
         <div class="page-footer-add__copyright">
           <p class="page-footer-add__copyright-text">Разработано
-          <a class="page-footer-add__copyright-button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
+          </p>
+          <a class="page-footer-add__copyright-button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="43px" height="43px"><path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
