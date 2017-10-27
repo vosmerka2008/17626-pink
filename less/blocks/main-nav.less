@@ -8,9 +8,27 @@
   background-color: @base-color;
 }
 
+.main-nav__logo-mobile {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  &:hover path {
+    fill: #D22856;
+  }
+  &:active  path {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo-tablet,
+.main-nav__logo-desktop {
+  display: none;
+}
+
 .main-nav--closed {
-  background-color: #1d2631;
-  opacity: 0.5;
+  background: rgba(0,0,0,0.5);
 }
 
 .main-nav--closed .main-nav__button {
@@ -125,18 +143,38 @@
     margin: 0 auto;
   }
 
-  .main-nav--closed .main-nav__button {
+  .main-nav__logo-mobile,
+  .main-nav__logo-desktop {
+    display: none;
+   }
+
+  .main-nav__logo-tablet {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 640px;
+    cursor: pointer;
+    &:hover path {
+    fill: #D22856;
+    }
+    &:active  path {
+      fill: #fff;
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav--closed .main-nav__button,
+  .main-nav--opened .main-nav__button {
     height: 110px;
+  }
+
+  .main-nav--opened .main-nav__button::before,
+  .main-nav--opened .main-nav__button::after {
+    top: 58px;
   }
 
   .main-nav--closed .main-nav__button::before {
     top: 43px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .main-nav__logo {
-    .visually-hidden;
   }
 }
 
@@ -149,8 +187,7 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    background-color: #10161b;
-    opacity: 0.5;
+    background: rgba(0,0,0,0.5);
   }
 
   .main-nav__wrapper {
@@ -160,11 +197,41 @@
     margin: 0 auto;
   }
 
+  .main-nav__logo-desktop {
+    display: block;
+    padding: 28px 0;
+    cursor: pointer;
+  }
+
+  .main-nav__logo-desktop {
+    &:hover {
+      .main-nav__logo-desktop-white {
+        fill: #D22856;
+      }
+      .main-nav__logo-desktop-star {
+        fill: #fff;
+      }
+    }
+    &:active {
+      .main-nav__logo-desktop-white {
+        fill: #fff;
+      }
+      .main-nav__logo-desktop-star {
+        fill: #D22856;
+      }
+      opacity: 0.3;
+    }
+  }
+
   .main-nav__list {
     display: flex;
   }
 
-  .main-nav__logo img {
-    margin-top: 30px;
+  .main-nav__logo-tablet {
+    display: none;
   }
 }
+
+
+
+

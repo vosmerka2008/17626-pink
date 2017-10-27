@@ -6,6 +6,11 @@
   padding-top: 80px;
 }
 
+.features__example-photo:nth-child(2),
+.features__example-photo:nth-child(3) {
+  display: none;
+}
+
 .features__title {
   font-size: 18px;
   line-height: 30px;
@@ -30,6 +35,10 @@
 
 .features__example {
   overflow: hidden;
+}
+
+.features__example-desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -115,5 +124,10 @@
 
   .features__example-image {
     padding-top: 75px;
+  }
+
+  .features__example-photo:nth-child(2),
+  .features__example-photo:nth-child(3) {
+    display: block;
   }
 }
