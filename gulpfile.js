@@ -27,8 +27,6 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-
-
 gulp.task("compress", function() {
   gulp.src("build/js/**/*.js")
     .pipe(jsminify({
@@ -93,5 +91,3 @@ gulp.task("build",function(done) {
     done
   );
 });
-
-
