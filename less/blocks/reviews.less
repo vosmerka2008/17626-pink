@@ -1,7 +1,7 @@
 .reviews {
   width: 320px;
   margin: 0 auto;
-  padding: 42px 25px 64px;
+  padding: 42px 25px 25px;
 }
 
 .reviews__wrapper input[type=radio] {
@@ -78,7 +78,7 @@
 @media (min-width: @tablet-width) {
   .reviews {
     width: auto;
-    padding: 78px 0 67px 48px;
+    padding: 78px 0 0 0;
   }
 
   .reviews__wrapper {
@@ -122,11 +122,12 @@
 @media (min-width: @desktop-width) {
   .reviews {
     width: auto;
+    padding: 183px 0 18px;
   }
 
   .reviews__wrapper {
-    width: 940px;
-    margin: 0 auto;
+    .wrap();
+    padding: 0 100px;
   }
 
   .reviews__author-name {
@@ -141,11 +142,11 @@
     font-size: 18px;
   }
 
-  .reviews__list {
-    padding: 190px 130px 0 130px;
-  }
-
   .reviews__toggles {
     .visually-hidden;
+  }
+
+  .reviews__button {
+    display: none;
   }
 }

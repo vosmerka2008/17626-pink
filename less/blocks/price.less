@@ -2,7 +2,11 @@
   width: 320px;
   margin: 0 auto;
   background-color: #f2f2f2;
-  padding: 65px 0 42px;
+  padding: 107px 0 42px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 1200px 94px;
+  background-position: -2px -51px;
 }
 
 .price__name {
@@ -161,7 +165,8 @@
 @media (min-width: @tablet-width) {
   .price {
     width: auto;
-    padding: 35px 0 34px;
+    padding: 101px 0 34px;
+    background-position: -2px -10px;
   }
 
   .price__wrapper {
@@ -231,6 +236,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .price {
+    width: auto;
+    padding: 148px 0 65px;
+    background-position: center 0;
+  }
+
+  .price__wrapper {
+    .wrap();
+  }
+
   .price__name {
     padding: 17px 0 19px;
     font-size: 18px;

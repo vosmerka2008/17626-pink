@@ -15,6 +15,7 @@
 @media (min-width: @tablet-width) {
   .page-footer {
     width: auto;
+    padding: 40px 0;
   }
 
   .page-footer__wrapper {
@@ -22,7 +23,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 127px;
   }
 
   .page-footer__logo {
@@ -56,5 +56,16 @@
 
   .page-footer__copyright-button:active path {
     fill: #bec2c7;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: auto;
+    padding: 70px;
+  }
+
+  .page-footer__wrapper {
+    .wrap();
   }
 }

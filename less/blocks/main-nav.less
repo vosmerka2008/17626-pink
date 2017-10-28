@@ -8,6 +8,16 @@
   background-color: @base-color;
 }
 
+.main-nav__wrapper {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-nav__list {
+  width: 100%;
+}
+
 .main-nav__logo-mobile {
   position: absolute;
   top: 20px;
@@ -150,14 +160,12 @@
 
   .main-nav__logo-tablet {
     display: block;
-    position: absolute;
-    top: 30px;
-    right: 640px;
+    margin-left: 20px;
     cursor: pointer;
-    &:hover path {
+    &:hover svg {
     fill: #D22856;
     }
-    &:active  path {
+    &:active svg {
       fill: #fff;
       opacity: 0.3;
     }
@@ -195,6 +203,7 @@
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
+    flex-wrap: nowrap;
   }
 
   .main-nav__logo-desktop {
