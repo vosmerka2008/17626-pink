@@ -6,6 +6,7 @@
 .page-footer-add__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 35px 0 20px;
 }
 
@@ -24,14 +25,20 @@
   font-size: 0;
 }
 
-.page-footer-add__logo-pink:hover path {
-  fill: #d22856;
+.page-footer-add__logo svg {
+  pointer-events: none;
+}
+
+.page-footer-add__logo:hover {
+  .page-footer-add__logo-pink {
+    fill: #d22856;
+  }
 }
 
 .page-footer-add__logo:active {
   opacity: 0.3;
 
-  .page-footer__logo-pink path {
+  .page-footer-add__logo-pink {
     fill: #283645;
   }
 }
@@ -47,6 +54,10 @@
 
 .page-footer-add__copyright-button:active path {
   fill: #bec2c7;
+}
+
+.page-footer-add__copyright-button svg {
+    pointer-events: none;
 }
 
 @media (min-width: @tablet-width) {

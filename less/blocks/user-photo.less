@@ -9,18 +9,22 @@
 }
 
 .user-photo__descr {
-  position: relative;
   background-color: #f2f2f2;
   padding: 17px 19px 21px;
 }
 
-.user-photo__descr::before {
+.user-photo__like-number::before {
   position: absolute;
   content: "";
   background: url("../img/icon-heart.svg") no-repeat;
   width: 13px;
   height: 12px;
-  bottom: 26px;
+  bottom: 0;
+  left: -33px;
+}
+
+.user-photo__like-number {
+  position: relative;
 }
 
 .user-photo__author {
@@ -109,13 +113,19 @@
     justify-content: space-between;
   }
 
-  .user-photo__descr::before {
-    right: 29px;
-    bottom: 30px;
+  .user-photo__photo--descr::before {
+    right: 40px;
+    top:57px;
   }
 
-  .user-photo__descr--day.user-photo__descr::before {
-    top: 30px;
+  .user-photo__like-number::before {
+    left: 225px;
+    bottom: 0;
+  }
+
+  .user-photo__descr--day .user-photo__like-number::before {
+    top: 0;
+    left: 100px;
   }
 
   .user-photo__descr--day {
@@ -163,11 +173,6 @@
   .user-photo__like-number--day {
     font-weight: normal;
   }
-
-  .user-photo__photo--descr::before {
-    top: 58px;
-    right: 38px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -177,7 +182,11 @@
 
   .user-photo__wrapper {
     .wrap();
-    justify-content: space-between;
+  }
+
+  .user-photo__photo--descr::before {
+    right: 130px;
+    top:57px;
   }
 
   .user-photo__descr--day {
@@ -202,8 +211,13 @@
     margin: 0 0 50px 0;
   }
 
-  .user-photo__photo--descr::before {
-    top: 54px;
-    right: 129px;
+  .user-photo__like-numer::before {
+    left: 228px;
+    bottom: 0;
+  }
+
+  .user-photo__descr--day .user-photo__like-number::before {
+    top: 2px;
+    left: 100px;
   }
 }
