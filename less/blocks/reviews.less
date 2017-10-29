@@ -20,6 +20,14 @@
   vertical-align: middle;
 }
 
+.reviews__pagination label:hover {
+  background-color: #7e868f;
+}
+
+.reviews__pagination label:active {
+  background-color: #ebecee;
+}
+
 .reviews__pagination {
   text-align: center;
 }
@@ -118,6 +126,12 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .reviews__btn {
+    .visually-hidden;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .reviews {
     width: auto;
@@ -129,35 +143,13 @@
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-size: 79px 63px;
-    background-position: 560px 70px;
-  }
-
-  .reviews::before,
-  .reviews::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-left: 3px solid #bec2c7;
-    border-bottom: 3px solid #bec2c7;
-    transform: rotate(-45deg);
-  }
-
-  .reviews::before {
-    left: 133px;
-    top: 218px;
-    transform: rotate(45deg);
-  }
-
-  .reviews::after {
-    right: 133px;
-    top: 218px;
-    transform: rotate(-135deg);
+    background-position: 50% 70px;
   }
 
   .reviews__wrapper {
     .wrap();
     padding: 0 100px;
+    position: relative;
   }
 
   .reviews__author-name {
@@ -176,7 +168,33 @@
     .visually-hidden;
   }
 
-  .reviews__button {
-    display: none;
+  .reviews__btn {
+    background: none;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -21px;
+    font-size: 0;
+
+    svg {
+      fill: #bec2c7;
+
+      &:hover {
+        fill: #7e868f;
+      }
+
+      &:active {
+        fill: #e9ebec;
+      }
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
   }
 }

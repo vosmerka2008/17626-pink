@@ -30,14 +30,24 @@
     cursor: pointer;
   }
 
-  .page-footer__logo-pink:hover path {
-    fill: #d22856;
+  .page-footer__logo svg {
+    pointer-events: none;
+  }
+
+  .page-footer__logo-pink {
+    fill: #283645;
+  }
+
+  .page-footer__logo:hover {
+    .page-footer__logo-pink {
+      fill: #d22856;
+    }
   }
 
   .page-footer__logo:active {
     opacity: 0.3;
 
-    .page-footer__logo-pink path {
+    .page-footer__logo-pink {
       fill: #283645;
     }
   }
@@ -53,6 +63,10 @@
 
   .page-footer__copyright-button:hover path {
     fill: #283645;
+  }
+
+  .page-footer__copyright-button svg {
+    pointer-events: none;
   }
 
   .page-footer__copyright-button:active path {
