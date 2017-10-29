@@ -122,6 +122,37 @@
   .reviews {
     width: auto;
     padding: 183px 0 18px;
+    position: relative;
+  }
+
+  .reviews {
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 79px 63px;
+    background-position: 560px 70px;
+  }
+
+  .reviews::before,
+  .reviews::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-left: 3px solid #bec2c7;
+    border-bottom: 3px solid #bec2c7;
+    transform: rotate(-45deg);
+  }
+
+  .reviews::before {
+    left: 133px;
+    top: 218px;
+    transform: rotate(45deg);
+  }
+
+  .reviews::after {
+    right: 133px;
+    top: 218px;
+    transform: rotate(-135deg);
   }
 
   .reviews__wrapper {

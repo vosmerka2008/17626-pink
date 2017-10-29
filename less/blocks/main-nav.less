@@ -20,12 +20,11 @@
 
 .main-nav__logo-mobile {
   position: absolute;
-  top: 20px;
+  top: 11px;
   left: 20px;
   cursor: pointer;
 
   svg {
-    pointer-events: none;
     fill: #ffffff;
 
     &:hover path {
@@ -170,13 +169,17 @@
     margin-left: 20px;
     cursor: pointer;
 
-    &:hover svg {
-      fill: #d22856;
-    }
-
-    &:active svg {
+    svg {
       fill: #ffffff;
-      opacity: 0.3;
+
+      &:hover path {
+        fill: #d22856;
+      }
+
+      &:active path {
+        fill: #ffffff;
+        opacity: 0.3;
+      }
     }
   }
 
@@ -220,28 +223,19 @@
     padding: 28px 0;
     cursor: pointer;
 
-    &:hover {
-      .main-nav__logo-desktop-white {
-        fill: #d22856;
-      }
-
-      .main-nav__logo-desktop-star {
+      svg {
         fill: #ffffff;
+
+        &:hover path {
+          fill: #d22856;
+        }
+
+        &:active path {
+          fill: #ffffff;
+          opacity: 0.3;
+        }
       }
     }
-
-    &:active {
-      .main-nav__logo-desktop-white {
-        fill: #ffffff;
-      }
-
-      .main-nav__logo-desktop-star {
-        fill: #d22856;
-      }
-
-      opacity: 0.3;
-    }
-  }
 
   .main-nav__list {
     display: flex;

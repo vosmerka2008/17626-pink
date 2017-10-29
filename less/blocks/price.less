@@ -107,6 +107,18 @@
   position: relative;
 }
 
+.price__name--hit::after {
+  content: "ХИТ";
+  position: absolute;
+  transform: rotate(-45deg);
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  top: 10px;
+  left: 10px;
+}
+
 .price__type--yes {
   position: relative;
 }
@@ -183,6 +195,11 @@
     transform: none;
   }
 
+  .price__name--hit::after {
+    top: 6px;
+    left: 4px;
+  }
+
   .price__name {
     font-size: 16px;
     padding: 14px 0 7px;
@@ -247,6 +264,11 @@
 
   .price__wrapper {
     .wrap();
+  }
+
+  .price__name--hit::after {
+    top: 9px;
+    left: 13px;
   }
 
   .price__name {
