@@ -220,19 +220,19 @@
     padding: 28px 0;
     cursor: pointer;
 
-      svg {
+    svg {
+      fill: #ffffff;
+
+      &:hover path {
+        fill: #d22856;
+      }
+
+      &:active path {
         fill: #ffffff;
-
-        &:hover path {
-          fill: #d22856;
-        }
-
-        &:active path {
-          fill: #ffffff;
-          opacity: 0.3;
-        }
+        opacity: 0.3;
       }
     }
+  }
 
   .main-nav__list {
     display: flex;
