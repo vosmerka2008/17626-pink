@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo-mobile">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+            <svg class="main-nav__logo-mobile" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
               <g>
                 <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
                 <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -142,9 +142,9 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper">
-          <input type="radio" id="btn-11" name="toggles" checked>
-          <input type="radio" id="btn-22" name="toggles">
-          <input type="radio" id="btn-33" name="toggles">
+          <input type="radio" id="btn-11" value="btn-11" name="toggles" checked>
+          <input type="radio" id="btn-22" value="btn-22" name="toggles">
+          <input type="radio" id="btn-33" value="btn-33" name="toggles">
           <div class="reviews__button">
             <button class="reviews__button-forth" type="button">Вперед
             </button>
@@ -154,7 +154,7 @@
           <input type="radio" id="btn-111" name="toggles">
           <input type="radio" id="btn-222" name="toggles">
           <div class="reviews__list">
-             <ul>
+            <ul>
               <li class="reviews__item">
                 <blockquote class="reviews__info">
                   <cite class="reviews__author-name">Николай Петров</cite>
@@ -188,9 +188,9 @@
       <section class="price">
         <h2 class="visually-hidden">Цены</h2>
         <div class="price__wrapper">
-          <input type="radio" id="btn-1" name="toggle">
-          <input type="radio" id="btn-2" name="toggle" checked>
-          <input type="radio" id="btn-3" name="toggle">
+          <input type="radio" id="btn-1" value="btn-1" name="toggle">
+          <input type="radio" id="btn-2" value="btn-2" name="toggle" checked>
+          <input type="radio" id="btn-3" value="btn-3" name="toggle">
           <div class="price__table">
             <table class="price__list">
               <tr class="price__names">

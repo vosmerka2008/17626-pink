@@ -23,12 +23,19 @@
   top: 20px;
   left: 20px;
   cursor: pointer;
-  &:hover path {
-    fill: #D22856;
-  }
-  &:active  path {
+
+  svg {
+    pointer-events: none;
     fill: #ffffff;
-    opacity: 0.3;
+
+    &:hover path {
+      fill: #d22856;
+    }
+
+    &:active path {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -38,7 +45,7 @@
 }
 
 .main-nav--closed {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .main-nav--closed .main-nav__button {
@@ -156,17 +163,19 @@
   .main-nav__logo-mobile,
   .main-nav__logo-desktop {
     display: none;
-   }
+  }
 
   .main-nav__logo-tablet {
     display: block;
     margin-left: 20px;
     cursor: pointer;
+
     &:hover svg {
-    fill: #D22856;
+      fill: #d22856;
     }
+
     &:active svg {
-      fill: #fff;
+      fill: #ffffff;
       opacity: 0.3;
     }
   }
@@ -195,7 +204,7 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
   }
 
   .main-nav__wrapper {
@@ -210,24 +219,26 @@
     display: block;
     padding: 28px 0;
     cursor: pointer;
-  }
 
-  .main-nav__logo-desktop {
     &:hover {
       .main-nav__logo-desktop-white {
-        fill: #D22856;
+        fill: #d22856;
       }
+
       .main-nav__logo-desktop-star {
-        fill: #fff;
+        fill: #ffffff;
       }
     }
+
     &:active {
       .main-nav__logo-desktop-white {
-        fill: #fff;
+        fill: #ffffff;
       }
+
       .main-nav__logo-desktop-star {
-        fill: #D22856;
+        fill: #d22856;
       }
+
       opacity: 0.3;
     }
   }
@@ -240,7 +251,3 @@
     display: none;
   }
 }
-
-
-
-

@@ -7,7 +7,7 @@
 }
 
 .loading-photo__range-filter {
-  -webkit-appearance: none;
+  appearance: none;
   width: 240px;
   height: 18px;
   margin: 0 auto 24px;
@@ -22,7 +22,7 @@
 }
 
 .loading-photo__range-filter::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   box-sizing: content-box;
   width: 11px;
   height: 11px;
@@ -38,7 +38,7 @@
 }
 
 .loading-photo__range-filter::-moz-range-track {
-  -moz-appearance: none;
+  appearance: none;
   width: 240px;
   height: 2px;
   background-color: #283645;
@@ -51,7 +51,7 @@
 }
 
 .loading-photo__range-filter::-moz-range-thumb {
-  -moz-appearance: none;
+  appearance: none;
   width: 11px;
   height: 11px;
   border: 2px solid #d22856;
@@ -83,7 +83,7 @@
   padding: 0;
   border: 2px solid #d22856;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -138,9 +138,9 @@
   fill: #8d949b;
 }
 
-#trimming:checked ~ .loading-photo__settings-type [for="trimming"] svg,
-#fill:checked ~ .loading-photo__settings-type [for="fill"] svg,
-#bright:checked ~ .loading-photo__settings-type [for="bright"] svg {
+[value="trimming"]:checked ~ .loading-photo__settings-type [for="trimming"] svg,
+[value="fill"]:checked ~ .loading-photo__settings-type [for="fill"] svg,
+[value="bright"]:checked ~ .loading-photo__settings-type [for="bright"] svg {
   fill: #d22856;
 }
 
@@ -228,15 +228,6 @@
     background-size: 22px 22px;
     width: 22px;
     height: 22px;
-  }
-
-  .loading-photo__range-wrap--1::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-editor-crop.svg");
-    background-size: 22px 22px;
-    width: 22px;
-    height: 22px;
     left: 3px;
   }
 
@@ -304,7 +295,7 @@
     padding: 50px 80px;
   }
 
-  .loading-photo__buttons{
+  .loading-photo__buttons {
     display: flex;
     justify-content: space-between;
   }
@@ -318,5 +309,3 @@
     padding: 16px 55px;
   }
 }
-
-
