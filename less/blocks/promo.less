@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.promo__attachment-download {
+.promo__download {
   display: inline-block;
   font-size: 18px;
   line-height: 18px;
@@ -31,48 +31,49 @@
   border: 3px solid #ffffff;
 }
 
-.promo__attachment-download:hover {
+.promo__download:hover {
   background-color: #ffffff;
   color: #d22856;
 }
 
-.promo__attachment-download:active {
+.promo__download:active {
   background-color: #ffffff;
   color: rgba(210, 40, 86, 0.3);
 }
 
-.promo__attachment-list {
-  padding: 27px 37px 20px;
+.promo__list {
+  padding: 27px 38px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.promo__attachment-link {
+.promo__link {
   font-size: 0;
   display: inline-block;
 }
 
-.promo__attachment-link--iPhone {
+.promo__link--iphone {
   height: 57px;
   width: 47px;
   background: url("../img/logo-apple.svg") no-repeat;
 }
 
-.promo__attachment-link--android {
+.promo__link--android {
   height: 47px;
   width: 43px;
   background: url("../img/logo-android.svg") no-repeat;
 }
 
-.promo__attachment-link--windows {
+.promo__link--windows {
   height: 41px;
   width: 44px;
   background: url("../img/logo-microsoft.svg") no-repeat;
 }
 
-.promo__attachment-for {
+.promo__for {
   color: #ffffff;
+  font-weight: lighter;
 }
 
 .promo__title {
@@ -82,7 +83,7 @@
 }
 
 @media (max-width: 660px) {
-  .promo__attachment-title {
+  .promo__title {
     .visually-hidden;
   }
 }
@@ -90,7 +91,7 @@
 @media (min-width: @tablet-width) {
   .promo {
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: bottom 0 right 180px, bottom 0 center;
+    background-position: bottom 0 center, bottom 0 center;
     width: auto;
     padding: 202px 0 109px;
 
@@ -111,16 +112,16 @@
     width: 300px;
   }
 
-  .promo__attachment-download {
+  .promo__download {
     padding: 16px 45px;
   }
 
-  .promo__attachment-for {
+  .promo__for {
     font-size: 18px;
     line-height: 24px;
   }
 
-  .promo__attachment-title {
+  .promo__title {
     font-size: 40px;
     line-height: 48px;
     color: #ffffff;
@@ -128,7 +129,7 @@
     margin-bottom: 30px;
   }
 
-  .promo__attachment-list {
+  .promo__list {
     padding: 42px 48px 35px;
   }
 }
@@ -136,9 +137,9 @@
 @media (min-width: @desktop-width) {
   .promo {
     background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-position: bottom 0 right 0, bottom 0 center;
+    background-position: bottom 0 center, bottom 0 center;
     width: auto;
-    padding: 216px 0 120px;
+    padding: 216px 0 121px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
@@ -155,23 +156,23 @@
     .wrap();
   }
 
-  .promo__attachment-title {
+  .promo__title {
     font-size: 50px;
     line-height: 60px;
     color: #ffffff;
     margin-bottom: 52px;
   }
 
-  .promo__attachment-download {
+  .promo__download {
     font-size: 21px;
     padding: 16px 27px;
   }
 
-  .promo__attachment-list {
+  .promo__list {
     padding: 66px 48px 50px;
   }
 
-  .promo__attachment-for {
+  .promo__for {
     font-size: 18px;
     line-height: 24px;
   }

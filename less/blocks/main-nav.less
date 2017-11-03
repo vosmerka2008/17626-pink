@@ -5,6 +5,11 @@
   background-color: @base-color;
 }
 
+.main-nav--closed {
+  background-color: transparent;
+  background: rgba(0, 0, 0, 0.3)
+}
+
 .main-nav__wrapper {
   align-items: center;
   display: flex;
@@ -15,32 +20,28 @@
   width: 100%;
 }
 
-.main-nav__logo-mobile {
+.main-nav__logo {
   cursor: pointer;
+}
+
+.main-nav__logo-mobile {
+  display: block;
   margin-left: 20px;
+  fill: #ffffff;
 
-  svg {
-    pointer-events: none;
+  &:hover path {
+    fill: #d22856;
+  }
+
+  &:active path {
     fill: #ffffff;
-
-    &:hover path {
-      fill: #d22856;
-    }
-
-    &:active path {
-      fill: #ffffff;
-      opacity: 0.3;
-    }
+    opacity: 0.3;
   }
 }
 
 .main-nav__logo-tablet,
 .main-nav__logo-desktop {
   display: none;
-}
-
-.main-nav--closed {
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .main-nav--closed .main-nav__button {
@@ -55,10 +56,6 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
-}
-
-.main-nav__button {
-  outline: none;
 }
 
 .main-nav--closed .main-nav__button::before {
@@ -84,7 +81,7 @@
   height: 69px;
   width: 31px;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 16px;
   padding: 0;
   border: none;
 
@@ -152,7 +149,7 @@
   }
 
   .main-nav__wrapper {
-    width: 100%;
+    width: 660px;
     margin: 0 auto;
   }
 
@@ -163,20 +160,16 @@
 
   .main-nav__logo-tablet {
     display: block;
-    margin-left: 20px;
-    cursor: pointer;
+    margin: 0 0 15px 20px;
+    fill: #ffffff;
 
-    svg {
+    &:hover path {
+      fill: #d22856;
+    }
+
+    &:active path {
       fill: #ffffff;
-
-      &:hover path {
-        fill: #d22856;
-      }
-
-      &:active path {
-        fill: #ffffff;
-        opacity: 0.3;
-      }
+      opacity: 0.3;
     }
   }
 
@@ -193,6 +186,11 @@
   .main-nav--closed .main-nav__button::before {
     top: 43px;
   }
+
+  .main-nav--opened .main-nav__button {
+    margin-right: 15px;
+    bottom: 4px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -204,7 +202,7 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
   }
 
   .main-nav__wrapper {
@@ -215,27 +213,46 @@
     flex-wrap: nowrap;
   }
 
-  .main-nav__logo-desktop {
+ .main-nav__logo-desktop {
     display: block;
-    padding: 28px 0;
-    cursor: pointer;
+    margin-bottom: 18px;
 
-    svg {
+   .main-nav__logo-desktop-white  {
       fill: #ffffff;
+    }
 
-      &:hover path {
-        fill: #d22856;
-      }
+    .main-nav__logo-desktop-star  {
+      fill: #d22856;
+    }
+  }
 
-      &:active path {
-        fill: #ffffff;
-        opacity: 0.3;
-      }
+  .main-nav__logo-desktop:hover {
+
+    .main-nav__logo-desktop-white {
+      fill: #d22856;
+    }
+
+    .main-nav__logo-desktop-star  {
+      fill: #ffffff;
+    }
+  }
+
+  .main-nav__logo-desktop:active {
+    opacity: 0.3;
+    fill: #ffffff;
+
+    .main-nav__logo-desktop-white {
+      fill: #ffffff;
+    }
+
+    .main-nav__logo-desktop-star  {
+      fill: #ffffff;
     }
   }
 
   .main-nav__list {
     display: flex;
+    width: auto;
   }
 
   .main-nav__logo-tablet {

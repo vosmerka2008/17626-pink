@@ -1,7 +1,7 @@
 .personal {
   text-align: left;
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 }
 
 .personal__item {
@@ -22,11 +22,11 @@
   line-height: 30px;
   border: 2px solid #e5e5e5;
   width: 280px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   margin-left: 20px;
   padding: 15px 20px;
   box-sizing: border-box;
-  height: 59px;
+  height: 61px;
 }
 
 @media (min-width: @tablet-width) {
@@ -40,11 +40,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 51px;
+    margin-bottom: 54px;
+  }
+
+  .personal__item:last-child {
+    margin-bottom: 67px;
   }
 
   .personal__label {
-    margin: 0 20px 0 0;
+    margin: 0 23px 0 0;
   }
 
   .personal__input {
@@ -57,10 +61,10 @@
 @media (min-width: @desktop-width) {
   .personal {
     width: 434px;
-    padding-top: 10px;
+    margin-top: -10px;
   }
 
   .personal__item {
-    margin-bottom: 52px;
+    margin-bottom: 55px;
   }
 }

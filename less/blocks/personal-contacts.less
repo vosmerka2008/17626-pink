@@ -9,7 +9,7 @@
 }
 
 .personal-contacts__wrapper {
-  padding: 30px 0;
+  padding: 28px 0;
 }
 
 .personal-contacts__label {
@@ -25,11 +25,11 @@
   line-height: 30px;
   border: 2px solid #e5e5e5;
   width: 280px;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   margin-left: 20px;
-  padding: 13px 25px;
+  padding: 13px 21px;
   box-sizing: border-box;
-  height: 59px;
+  height: 61px;
 }
 
 @media (max-width: 660px) {
@@ -40,22 +40,24 @@
 
 @media (min-width: @tablet-width) {
   .personal-contacts {
+    .form-fieldset();
     width: 620px;
     order: 3;
     border: 2px solid #e5e5e5;
-    padding: 54px 58px 0;
-    margin-bottom: 60px;
+    padding: 46px 58px 0;
+    margin-bottom: 64px;
   }
 
   .personal-contacts__wrapper {
     position: relative;
+    padding: 0;
   }
 
   .personal-contacts__item::before {
     position: absolute;
     content: "";
-    width: 59px;
-    height: 59px;
+    width: 61px;
+    height: 61px;
     right: 0;
     top: 0;
     bottom: 82px;
@@ -81,16 +83,21 @@
   }
 
   .personal-contacts__label {
-    margin: 0 0 36px 20px;
+    margin: 0 0 31px 21px;
+  }
+
+  .personal-contacts__item--mail label {
+    margin: 0 0 27px 21px;
   }
 
   .personal-contacts__input {
-    margin: 0 0 17px 0;
+    margin: 0 0 11px;
     width: 100%;
     padding: 13px 0 13px 21px;
   }
 
   .personal-contacts__description {
+    .form-legend();
     line-height: 30px;
     color: #d22856;
     text-transform: uppercase;
@@ -102,8 +109,8 @@
 @media (min-width: @desktop-width) {
   .personal-contacts {
     width: 100%;
-    margin-bottom: 50px;
-    padding: 50px 58px 0 60px;
+    margin-bottom: 67px;
+    padding: 41px 59px 11px;
   }
 
   .personal-contacts__description {
@@ -112,7 +119,8 @@
 
   .personal-contacts__input {
     width: 374px;
-    margin: 0 0 15px;
+    margin: 0 0 11px;
+    padding: 13px 0 13px 16px;
   }
 
   .personal-contacts__label {
@@ -127,4 +135,10 @@
   .personal-contacts__item::before {
     bottom: 60px;
   }
+
+  .personal-contacts__item label {
+    margin: 0 0 0 17px;
+  }
+
+
 }

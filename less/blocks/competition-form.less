@@ -23,9 +23,9 @@
   color: #ffffff;
   background-color: #2aab6d;
   border: 0;
-  padding: 15px;
+  padding: 16px;
   width: 280px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .competition-form__button:hover {
@@ -75,7 +75,18 @@
     margin: 0;
     width: 296px;
   }
+
+  .competition-form__text {
+    margin: 0;
+  }
 }
+
+@media (max-width: 1200px) {
+  .competition-form__text span {
+    .visually-hidden;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .competition-form {
@@ -94,5 +105,9 @@
 
   .competition-form__button-text {
     width: 940px;
+  }
+
+  .competition-form__button-text {
+    margin: 0;
   }
 }

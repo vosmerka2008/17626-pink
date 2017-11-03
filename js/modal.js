@@ -5,9 +5,11 @@ nav.classList.remove("main-nav--nojs");
 
 closeMenuButton.addEventListener("click", function() {
   if (nav.classList.contains("main-nav--closed")) {
-    nav.classList.replace("main-nav--closed", "main-nav--opened");
+    nav.classList.remove("main-nav--closed");
+    nav.classList.add("main-nav--opened");
   } else {
-    nav.classList.replace("main-nav--opened", "main-nav--closed");
+    nav.classList.remove("main-nav--opened");
+    nav.classList.add("main-nav--closed");
   }
 });
 

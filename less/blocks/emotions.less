@@ -7,19 +7,20 @@
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
-  padding: 33px 0 13px;
+  padding: 29px 0 13px;
 }
 
 .emotions__field {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: @base-color;
   width: 280px;
-  min-height: 194px;
+  min-height: 198px;
   text-align: left;
   box-sizing: border-box;
-  padding: 14px;
-  margin-bottom: 46px;
+  padding: 13px 17px;
+  margin-bottom: 44px;
   border: 2px solid #e5e5e5;
   outline: none;
   resize: none;
@@ -35,14 +36,16 @@
 
 @media (min-width: @tablet-width) {
   .emotions {
+    .form-fieldset();
     order: 5;
     width: 620px;
     border: 2px solid #e5e5e5;
-    margin-bottom: 60px;
-    padding: 28px 60px 36px;
+    margin-bottom: 67px;
+    padding: 45px 58px 44px;
   }
 
   .emotions__description {
+    .form-legend();
     line-height: 30px;
     padding: 0 40px;
   }
@@ -51,17 +54,19 @@
     width: 100%;
     min-height: 194px;
     margin: 0;
+    padding: 15px 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .emotions {
     width: 100%;
-    padding: 20px 60px 60px;
+    padding: 44px 59px 35px;
   }
 
   .emotions__field {
     width: 100%;
     min-height: 128px;
+    padding-left: 15px 16px;
   }
 }

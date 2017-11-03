@@ -35,7 +35,7 @@
   font-style: normal;
   text-align: left;
 
-  time {
+  span {
     font-size: 12px;
     font-weight: normal;
     text-transform: uppercase;
@@ -58,6 +58,7 @@
 }
 
 .user-photo__image {
+
   display: block;
   margin: 0 auto;
 }
@@ -74,7 +75,7 @@
   width: 140px;
   height: 36px;
   font-size: 12px;
-  line-height: 36px;
+  line-height: 34px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -103,15 +104,20 @@
   .user-photo__descr {
     width: 100%;
     min-height: 155px;
-    padding: 23px 28px;
+    padding: 22px 28px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
+  .user-photo__photo--descr .user-photo__image {
+    width: 660px;
+    height: 509px;
+  }
+
   .user-photo__photo--descr::before {
-    right: 40px;
+    right: 20px;
     top: 57px;
   }
 

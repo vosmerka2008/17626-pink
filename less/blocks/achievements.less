@@ -10,21 +10,29 @@
   text-transform: uppercase;
   text-align: center;
   background-color: #f2f2f2;
-  padding: 40px;
+  padding: 39px 40px 45px;
 }
 
 @media (min-width: @tablet-width) {
   .achievements {
+    .form-fieldset();
     width: 100%;
     order: 4;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
   }
 
   .achievements__description {
+    .form-legend();
     background-color: #ffffff;
     line-height: 30px;
     padding: 0 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .achievements {
+    margin-bottom: 62px;
   }
 }
