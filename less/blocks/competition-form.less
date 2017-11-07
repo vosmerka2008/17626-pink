@@ -4,8 +4,23 @@
   margin: 0 auto;
 }
 
-.competition-form input {
-  outline: none;
+.competition-form input::-webkit-input-placeholder {
+  color: @base-color;
+}
+
+.competition-form input::-moz-placeholder {
+  color: @base-color;
+  opacity: 1;
+}
+
+.competition-form input:-ms-input-placeholder {
+  color: @base-color;
+}
+
+.competition-form input[type=text],
+.competition-form input[type=tel],
+.competition-form input[type=email] {
+  font-family: inherit;
 }
 
 .competition-form input:hover {
@@ -17,6 +32,7 @@
 }
 
 .competition-form__button {
+  font-family: inherit;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -44,7 +60,7 @@
 .competition-form__text {
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin: 0 0 18px 0;
 }
 
 .competition-form__text sup {
@@ -68,7 +84,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .competition-form__button {
@@ -105,9 +121,6 @@
 
   .competition-form__button-text {
     width: 940px;
-  }
-
-  .competition-form__button-text {
     margin: 0;
   }
 }

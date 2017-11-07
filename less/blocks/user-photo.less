@@ -49,7 +49,7 @@
 
 .user-photo__like {
   padding: 0 31px;
-  margin-top: 9px;
+  margin: 9px 0 0 0;
 }
 
 .user-photo__item {
@@ -67,11 +67,7 @@
   margin: 0 auto;
 }
 
-.user-photo__item--big picture {
-  position: relative;
-}
-
-.user-photo__item--big picture::before {
+.user-photo__big::before {
   position: absolute;
   top: 0;
   right: 20px;
@@ -87,13 +83,18 @@
   background-color: #d22856;
 }
 
+.user-photo__big {
+  position: relative;
+  width: 100%;
+}
+
 .user-photo__photo {
   display: flex;
   justify-content: center;
 }
 
 .user-photo__quote {
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
 }
 
 .user-photo__item--big {
@@ -135,8 +136,8 @@
     left: 227px;
   }
 
-  .user-photo__item--big picture::before {
-    top: 58px;
+  .user-photo__big::before {
+    top: 57px;
     right: 40px;
   }
 
@@ -220,7 +221,7 @@
     bottom: 3px;
   }
 
-  .user-photo__item--big picture::before {
+  .user-photo__big::before {
     top: 54px;
     right: 129px;
   }
