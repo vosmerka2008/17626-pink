@@ -22,15 +22,11 @@
   text-align: center;
   padding: 41px 30px 43px;
   margin: 0;
-
-  span {
-    display: block;
-  }
 }
 
 @media (max-width: 660px) {
   .page-main__text-top span {
-    .visually-hidden;
+    display: none;
   }
 }
 
@@ -46,6 +42,10 @@
   .page-main__text-top {
     font-size: 18px;
     padding: 92px 42px 72px;
+
+    span {
+      display: block;
+    }
   }
 
   .page-main__text-top-photo {
